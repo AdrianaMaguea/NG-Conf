@@ -1,0 +1,58 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.info-organizers {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 5% 0;
+
+    .texto-info {
+        padding: 0 15%;
+        margin: 0 0 34px 0;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 900;
+            margin: 0;
+            @include tablet {
+                font-size: 50px;
+            }
+        }
+        p {
+            font-size: 20px
+        }
+    }
+}
+
+.organizers {
+    display: flex;
+    margin: 0 40px;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
+
+    .testimonio {
+        padding: 2%;
+        flex: 0 1 calc(50%);
+
+        img {
+            border-radius: 80px;
+        }
+        h3 {
+            font-size: 25px;
+            margin: 20px 0 4px;
+        }
+        h4 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        p {
+            font-size: 20px;  
+        }
+        span {
+            text-decoration: underline $morado-principal;
+        }
+    }
+}

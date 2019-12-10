@@ -1,18 +1,11 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
-html {
-    @include box-sizing(border-box);
-}
-*,
-*:after,
-*::before {
-    @include box-sizing (inherit);
-}
+
 
 
 :host {
-    background: url(../../assets/green.jpg) no-repeat center center;
+    background: url(../../assets/purple.jpg) no-repeat center center;
     background-size:cover;
     height: 100vh;
     display: flex;
@@ -24,35 +17,54 @@ html {
     text-align: center;
     flex: 0 0 100%;
 
-    .logo {
-        width: 200px;
-    }
-    
-    h2 {
-        font-size: 20px;
-        margin: 5px 0;
-        @include tablet {
-            font-size: 40px;
-        } 
-    }
-    
-    h1 {
-        font-size: 30px;
-        margin: 5px 0;
-        text-transform: uppercase;
-        @include tablet {
-            font-size: 70px;
-        } 
-    }
-
     h3 {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 30px;
+        font-weight: 400;
         margin: 0;
         @include tablet {
             font-size: 40px
-    
         }
+    }
     
+    h1 {
+        font-size: 50px;
+        margin: 10px 0;
+        text-transform: uppercase;
+        @include tablet {
+            font-size: 100px;
+        }
+
+        span {
+            text-decoration: underline $amarillo;    
+        }
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 50%;
+        margin: auto;
+    }
+
+}
+
+.scroll-down {
+
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    
+     
+    svg {
+    
+        width: 30px;
+        height: 28px;
+        color: $amarillo;
+        display: block;
+        text-align: center;
+        margin: 0px auto 10px;
+        font-size: 30px;
     }
 }

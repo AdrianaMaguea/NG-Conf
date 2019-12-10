@@ -1,0 +1,66 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+
+
+.informacion2 {
+    display: flex;
+    padding-block-start: 80px;
+    background-color: #f2f2f2;
+    flex-direction: column;
+    @include tablet () {
+        flex-direction: row;
+    }
+    img {
+        max-width: 100%;
+        max-height: 500px; 
+        margin: 0 0 5% 10%;
+    }
+
+}
+.info2 {
+    margin: 0px 0px 40px;
+    padding:0px 25px 0px 8%;
+    flex: 0 0 50%;
+    color: $negro;
+
+    span {
+        color: $azul;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 40px; 
+        font-weight: 800;
+        @include tablet {
+            font-size: 50px;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+.numbers {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    @include tablet () {
+        flex-direction: row;
+    }
+    h2 {
+        margin: 0;
+        color: $rojo;
+    }
+
+
+    .clients {
+        padding: 0px 15px;
+    }
+    .tickets {
+        padding: 0px 15px;
+    }
+
+}

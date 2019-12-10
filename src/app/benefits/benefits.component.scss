@@ -1,0 +1,54 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+
+
+.contenedor {
+    padding: 0;
+    
+
+    h3 {
+        margin: 0;
+        font-weight: 700;
+        }  
+}
+
+.contenido-secundario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    @include tablet () {
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+        flex: 0 1 calc(50% - 1rem);
+        padding: 70px 40px;
+        margin-bottom: 0;
+
+        @include tablet () {
+             flex: 0 1 calc(33% - 1rem);
+        }
+
+        svg {
+            width: 50%;
+            color: $azul;
+            display: block;
+            margin: 0px auto 40px;
+            font-size: 80px;
+            margin-bottom: 22px;
+            text-align: center;
+        }
+    }
+}
+
+.contenido {
+    text-align: center;
+    color: $negro;
+    p {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,35 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+footer {
+    background-color: #737373;
+    padding: 80px 40px 60px;
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include tablet () {
+            flex-direction: row;
+        }
+    }
+}
+
+.info-footer {
+    flex: 1 0 25%;
+    padding: 0 15px;
+    h4 {
+        font-size: 25px;
+        margin: 0;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 0;
+    }
+    p {
+        font-size: 18px;
+    }
+    li {
+        list-style: none;
+        padding: 7px;
+    }
+}
