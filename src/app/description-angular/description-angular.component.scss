@@ -2,49 +2,10 @@
 @import '../../sass/mixins';
 
 :host {
-    display: flex;
-    padding-block-start: 60px;
-    background-color: #f2f2f2;
-    flex-direction: column;
-    @include tablet () {
-        flex-direction: row;
-    }
-    img {
-        width: 90%;
-        margin: auto;
-        display: block;
-    }
+    background-color: #F2F2F2;
+    display: block;
 }
 
-.img-container {
-    display: flex;
-}
-
-.info2 {
-    margin: 0px 0px 40px;
-    padding:0px 25px 0px 8%;
-    flex: 0 0 50%;
-    color: $negro;
-    span {
-        color: $azul;
-        font-weight: bold;
-    }
-    h2 {
-        font-size: 40px; 
-        font-weight: 800;
-        line-height: 1.1em;
-        @include tablet {
-            font-size: 50px;
-        }
-    }
-    h3 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-}
 .numbers {
     display: flex;
     flex-direction: column;

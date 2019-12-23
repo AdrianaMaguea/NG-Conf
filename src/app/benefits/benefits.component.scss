@@ -5,12 +5,18 @@
 
 .contenedor {
     padding: 0;
-    
-
+    margin: auto;
+    max-width: 1600px;
     h3 {
         margin: 0;
         font-weight: 700;
-        }  
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 45px;
+        text-align: center;
+        margin: 40px 0 0;
+    }
 }
 
 .contenido-secundario {

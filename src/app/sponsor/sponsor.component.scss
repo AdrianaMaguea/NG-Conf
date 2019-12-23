@@ -1,49 +1,12 @@
-@import '../../sass/variables';
-@import '../../sass/mixins';
-
-
-.description {
-    display: flex;
-    flex-direction: column;
-    background-color: $blanco;
-    padding: 80px 0px 0px;
-    
-    @include tablet () {
-        flex-direction: row;
-    }
-   }
+.split-section {
+    background-color: white;
+}
 
 .info {
-       margin: 0px 0px 40px;
-       padding:0px 25px 0px 8%;
-       flex: 0 0 50%;
-       color: $negro;
+    padding-inline-end: 20px;
+}
 
-       span {
-           color: $azul;
-           font-weight: bold;
-       }
-       h2 {
-           font-size: 40px; 
-           font-weight: 800;
-           @include tablet {
-               font-size: 50px;
-           }
-       }
-       p {
-           font-size: 18px;
-       }
-       h3 {
-           font-size: 20px;
-       }
-    }
-   
-.imagen-info {
-       max-height: 460px; 
-       max-width: 100%;
-       margin: 0 10% 5% 10%;
-       @include tablet () {
-        margin: 0 0 5% 10%;
-
-       }
-      }
+.img {
+    background: url(../../assets/sponsor.jpg) no-repeat center center transparent;
+    background-size: cover;
+}

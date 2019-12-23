@@ -11,9 +11,13 @@ html {
 }
 
 body {
-    font-family: $fuenteprincipal;
+    font-family: $mainfont;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: $titlefont;
 }
 
 a {
@@ -22,5 +26,57 @@ a {
     font-weight: 600;
     &:hover {
         color: lighten($azul, 10%);
+    }
+}
+
+.split-section {
+    max-width: 1600px;
+    padding: 0 0 0 6%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;    
+    @include tablet () {
+        flex-direction: row;
+    }
+
+    > div {
+        flex: 50%;
+    }
+    
+    .info {
+        padding: 40px 0;
+        color: $negro;
+        span {
+            color: $azul;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+
+    h2 {
+        font-size: 40px; 
+        font-weight: 800;
+        line-height: 1.1;
+        @include tablet {
+            font-size: 50px;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 90%;
+            max-width: 500px;
+            margin: 50px auto;
+            display: block;
+        }
     }
 }
