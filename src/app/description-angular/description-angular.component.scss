@@ -1,29 +1,30 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
-
-
-.informacion2 {
+:host {
     display: flex;
-    padding-block-start: 80px;
+    padding-block-start: 60px;
     background-color: #f2f2f2;
     flex-direction: column;
     @include tablet () {
         flex-direction: row;
     }
     img {
-        max-width: 100%;
-        max-height: 500px; 
-        margin: 0 0 5% 10%;
+        width: 90%;
+        margin: auto;
+        display: block;
     }
-
 }
+
+.img-container {
+    display: flex;
+}
+
 .info2 {
     margin: 0px 0px 40px;
     padding:0px 25px 0px 8%;
     flex: 0 0 50%;
     color: $negro;
-
     span {
         color: $azul;
         font-weight: bold;
@@ -31,22 +32,23 @@
     h2 {
         font-size: 40px; 
         font-weight: 800;
+        line-height: 1.1em;
         @include tablet {
             font-size: 50px;
         }
+    }
+    h3 {
+        font-size: 20px;
     }
     p {
         font-size: 18px;
         line-height: 1.5;
     }
-    h3 {
-        font-size: 20px;
-    }
 }
 .numbers {
     display: flex;
-    padding: 20px;
     flex-direction: column;
+    margin-block-start: 40px;
     @include tablet () {
         flex-direction: row;
     }
@@ -54,13 +56,8 @@
         margin: 0;
         color: $rojo;
     }
-
-
-    .clients {
+    div {
         padding: 0px 15px;
+        text-align: center;
     }
-    .tickets {
-        padding: 0px 15px;
-    }
-
 }
