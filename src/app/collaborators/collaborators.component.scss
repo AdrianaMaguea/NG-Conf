@@ -1,11 +1,15 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
-.info-organizers {
+:host {
     background-color: #f2f2f2;
+    display: block;
+}
+
+.info-organizers {
     text-align: center;
     padding: 5% 0;
-
+    
     .texto-info {
         margin: 0 15px 34px;
 

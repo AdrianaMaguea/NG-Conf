@@ -1,8 +1,13 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
-footer {
+:host {
     background-color: #737373;
+    display: block;
+}
+
+footer {
+    color: $blanco;
     padding: 80px 40px 60px;
     .footer {
         display: flex;

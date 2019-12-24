@@ -19,6 +19,13 @@
     }
 }
 
+@mixin maxscreenwidth {
+    @media (min-width: #{$maxscreenwidth}){
+        @content;
+        
+    }
+}
+
 @mixin box-sizing ($box-model) {
     box-sizing: $box-model;
 }
