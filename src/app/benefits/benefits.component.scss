@@ -1,6 +1,10 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
+:host {
+    text-align: center;
+    display: block;
+}
 
 h3 {
     margin: 0;
@@ -8,10 +12,11 @@ h3 {
 }
 
 h1 {
-    text-transform: uppercase;
-    font-size: 45px;
-    text-align: center;
     margin: 40px 0 0;
+}
+
+h4 {
+    font-family: $mainfont;
 }
 
 .contenido-secundario {
@@ -42,13 +47,11 @@ h1 {
             margin: 0px auto 40px;
             font-size: 80px;
             margin-bottom: 22px;
-            text-align: center;
         }
     }
 }
 
 .contenido {
-    text-align: center;
     color: $negro;
     p {
         font-size: 20px;

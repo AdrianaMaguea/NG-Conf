@@ -2,8 +2,18 @@
 @import '../../sass/mixins';
 
 :host {
-    background-color: #737373;
+    background-color: #444444;
+    color: white;
     display: block;
+    text-align: center;
+    padding:  30px 0 10px;
+    font-family: $titlefont;
+    text-transform: uppercase;
+    border-bottom: 13px solid #383838;
+}
+
+img {
+    width: 100px;
 }
 
 footer {
