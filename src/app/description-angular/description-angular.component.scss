@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     margin-block-start: 40px;
-    justify-content: space-between;
+    justify-content: space-around;
     @include tablet () {
         flex-direction: row;
     }
@@ -27,10 +27,9 @@
 
 .info {
     padding-inline-end: 20px;
-    flex-basis: 620px;
+    flex-basis: 800px;
 }
 
-.img {
-    background: url(https://pbs.twimg.com/media/DmgNgsWXcAA9H60?format=jpg&name=4096x4096) no-repeat center center transparent;
-    background-size: cover;
+.img img {
+  max-width: unset;
 }
