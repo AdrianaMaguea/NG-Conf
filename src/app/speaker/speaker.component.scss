@@ -2,7 +2,7 @@
 @import '../../sass/mixins';
 
 :host {
-    background: url(../../assets/imagenprincipal.jpg) center center no-repeat;
+    background: url(../../assets/blue.jpg) center center no-repeat;
     background-size:cover ;
     text-align: center;
     display: block;
@@ -24,6 +24,11 @@ h3 {
         width: 100%;
         color: $blanco;
         position: relative;
+        margin: 10px 0;
+        @include tablet () {
+            margin: 0px 10px;
+        }
+        
         &:hover {
             .texto {
                 height: 80%;
@@ -54,6 +59,7 @@ h3 {
     h3 {
         margin: 0 0 10px;
         font-family: $mainfont;
+        font-size: 20px;
     }
     p {
         line-height: 1.1rem;
