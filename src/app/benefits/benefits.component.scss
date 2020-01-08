@@ -15,21 +15,22 @@ h1 {
     margin: 40px 0 0;
 }
 
-h4 {
+h2 {
     font-family: $mainfont;
     font-size: 20px;
+    font-weight: normal;
 }
 
 .contenido-secundario {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
+
     @include tablet () {
         flex-direction: row;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
-    
+
     .card {
         margin-bottom: 1rem;
         flex: 0 1 calc(50% - 1rem);
