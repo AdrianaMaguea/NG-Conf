@@ -13,6 +13,7 @@ import { OrganizerComponent } from './organizer/organizer.component';
 import { CollaboratorsComponent } from './collaborators/collaborators.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
 import { FooterComponent } from './footer/footer.component';
+import { MailComponent } from './mail/mail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
     OrganizerComponent,
     CollaboratorsComponent,
     SponsorComponent,
-    FooterComponent
+    FooterComponent,
+    MailComponent
   ],
   imports: [
     BrowserModule,

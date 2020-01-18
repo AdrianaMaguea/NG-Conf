@@ -1,0 +1,25 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+:host{
+    display: block;
+    background-color: #f2f2f2;
+}
+#mc_embed_signup_scroll {
+h2 {
+    text-align: center;
+    color: $rojo;
+    font-size: 35px;
+    }
+    label {
+        font-size: 20px;
+        color: $azul;
+    }
+}
+.mc-field-group {
+    padding: 0;
+}
+
+#mc_embed_signup .button {
+    background-color: $rojo;
+}
