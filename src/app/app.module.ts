@@ -14,6 +14,7 @@ import { CollaboratorsComponent } from './collaborators/collaborators.component'
 import { SponsorComponent } from './sponsor/sponsor.component';
 import { FooterComponent } from './footer/footer.component';
 import { MailComponent } from './mail/mail.component';
+import { TicketsComponent } from './tickets/tickets.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MailComponent } from './mail/mail.component';
     CollaboratorsComponent,
     SponsorComponent,
     FooterComponent,
-    MailComponent
+    MailComponent,
+    TicketsComponent
   ],
   imports: [
     BrowserModule,

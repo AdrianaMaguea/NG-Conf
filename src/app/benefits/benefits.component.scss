@@ -39,7 +39,7 @@ h2 {
 
         @include tablet () {
              flex: 0 1 calc(33% - 1rem);
-             padding: 70px 40px;
+             padding: 70px 40px 0;
         }
 
         svg {

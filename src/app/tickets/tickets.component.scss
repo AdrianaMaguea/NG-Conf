@@ -1,0 +1,86 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.container {
+    h1 {
+        margin: 0;
+    }
+    h2 {
+        text-align: center;
+        br {
+            margin: 10px;
+        }
+    }
+    
+
+}
+.tabla {
+    display: flex;
+    margin: 3% 0 0; 
+    justify-content: center;  
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
+}
+
+.tabla-precios { 
+    margin: 0 0 40px;
+    border: $border;
+    text-align: center;
+    flex-basis: 25%;
+    
+    @include tablet {
+    border-block-start:$border;
+    border-block-end: $border;
+    border-inline-start: $border;
+    &:last-child {
+        border-inline-end: $border;
+    }
+
+    }
+   
+    h5 {
+        font-size: 20px;
+        font-weight: 800;
+        padding: 40px 0;
+        margin: 0;
+        border-block-end: $border;
+    }
+    .precios {
+        padding: 35px 20px;
+        border-block-end: $border;
+        height: 200px;
+
+        h3 {
+            font-size: 60px;
+            font-weight: 800;
+            margin: 0;
+            span {
+                font-size: 50px;
+                color: $negro;
+            }
+        }
+        p {
+            font-size: 20px;
+            color: #737373;
+            margin: 10px 0 0;
+    
+        }
+    }
+}
+
+.boton-precios {
+    @include boton ($amarillo);
+    font-weight: bold;
+    width: auto;
+    margin: 20px 15px;
+    padding: 10px 0;
+    color: $negro;
+
+    a { 
+        padding: 0;
+        margin: 0;
+
+    }
+}
