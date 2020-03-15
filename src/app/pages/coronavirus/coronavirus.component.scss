@@ -1,0 +1,78 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+
+.caption {
+    background: url(../../../assets/corona.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    h1 {
+        padding-top: 20px;
+        margin-top: 0;
+        font-size: 80px;
+        color: $blanco;
+    }
+    p {
+        text-align: center;
+        font-size: 40px;
+        color: $blanco;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+.fullinfo {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
+    .info2 {
+        padding: 40px;
+        flex: 1 0 50%;
+        ul {
+            padding: 0;
+        }
+
+        h3 {
+            color: $rojo;
+            font-size: 30px;
+        }
+        span {
+            color: $rojo;
+            font-weight: bold;
+        }
+    }
+    .logoinfo {
+        margin: 0;
+        @include tablet {
+            margin: 100px 0 80px;
+        }
+        img {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+    }
+
+}
+.info {
+    padding: 0 20px;
+    p {
+        span {
+            color: $rojo;
+            font-weight: bold;
+        }
+    }
+
+    h3 {
+        color: $rojo;
+        font-size: 30px;
+    }
+}
+
+.fin {
+    color: $rojo;
+    font-weight: bold;
+    font-size: 22px;
+}

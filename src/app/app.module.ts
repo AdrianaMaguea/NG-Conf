@@ -15,6 +15,8 @@ import { SponsorComponent } from './sponsor/sponsor.component';
 import { FooterComponent } from './footer/footer.component';
 import { MailComponent } from './mail/mail.component';
 import { TicketsComponent } from './tickets/tickets.component';
+import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { TicketsComponent } from './tickets/tickets.component';
     SponsorComponent,
     FooterComponent,
     MailComponent,
-    TicketsComponent
+    TicketsComponent,
+    CoronavirusComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
