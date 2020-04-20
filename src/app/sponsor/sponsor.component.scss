@@ -1,6 +1,10 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
+:host {
+  display: block;
+}
+
 .split-section {
     background-color: white;
 }
