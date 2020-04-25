@@ -1,0 +1,54 @@
+<mat-toolbar>
+  <div class="content-wrapper" [class.mobile]="showMobileNavBar">
+    <div class="logo">
+      <app-responsive-logo [width]="'54px'" [height]="'54px'" color="#fff"></app-responsive-logo>
+    </div>
+
+    <div class="mobile-menu" *ngIf="showMobileNavBar" >
+      <div class="current-section-label"><p>{{currentSectionLabel}}</p></div>
+      <div class="menu-button">
+        <mat-icon *ngIf="mobileMenuState !== 'opened'" (click)="toggleMenu()" [@spinInOut]>menu</mat-icon>
+        <mat-icon *ngIf="mobileMenuState === 'opened'" (click)="toggleMenu()" [@spinInOut]>close</mat-icon>
+      </div>
+    </div>
+
+    <ul
+      class="single-page-navigation-bar"
+      [class.mobile]="showMobileNavBar"
+      [class.settingUpNavBar]="settingUpNavBar"
+      [@slideInOutVertical]="mobileMenuState"
+      >
+      <div class="selection-indicator"></div>
+      <li>
+        <button mat-button data-target="#when">Date</button>
+      </li>
+      <li>
+        <button mat-button data-target="#description">About</button>
+      </li>
+      <li>
+        <button mat-button data-target="#benefits">Benefits</button>
+      </li>
+      <li>
+        <button mat-button data-target="#speakers">Speakers</button>
+      </li>
+      <li>
+        <button mat-button data-target="#tickets">Tickets</button>
+      </li>
+      <li>
+        <button mat-button data-target="#comunity">Community</button>
+      </li>
+      <li>
+        <button mat-button data-target="#organizers">Organizers</button>
+      </li>
+      <li>
+        <button mat-button data-target="#collaborators">Collaborators</button>
+      </li>
+      <li>
+        <button mat-button data-target="#sponsors">Sponsors</button>
+      </li>
+      <li>
+        <button mat-button data-target="#mail">Mail</button>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>

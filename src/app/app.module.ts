@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { MainMenuComponent } from './main-menu/main-menu.component';
+import { SinglePageMenuComponent } from './single-page-menu/single-page-menu.component';
 import { DescriptionComponent } from './description/description.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { SpeakerComponent } from './speaker/speaker.component';
@@ -17,12 +17,18 @@ import { MailComponent } from './mail/mail.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component';
 import { HomeComponent } from './pages/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { ResponsiveLogoComponent } from './shared/responsive-logo/responsive-logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainMenuComponent,
+    SinglePageMenuComponent,
     DescriptionComponent,
     BenefitsComponent,
     SpeakerComponent,
@@ -35,10 +41,15 @@ import { HomeComponent } from './pages/home/home.component';
     TicketsComponent,
     CoronavirusComponent,
     HomeComponent,
+    ResponsiveLogoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

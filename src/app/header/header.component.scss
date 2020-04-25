@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     color: $blanco;
+    position: relative;
 }
 
 .caption {
@@ -26,7 +27,7 @@
             font-size: 40px
         }
     }
-    
+
     h1 {
         font-size: 48px;
         text-transform: uppercase;
@@ -40,7 +41,7 @@
             font-size: 100px;
         }
         span {
-            text-decoration: underline $amarillo;    
+            text-decoration: underline $amarillo;
         }
     }
 
@@ -70,16 +71,36 @@
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    
-     
+
+
     svg {
-    
+
         width: 30px;
         height: 28px;
         color: $amarillo;
         display: block;
         text-align: center;
-        margin: 0px auto 10px;
+        margin: 0px auto 26px;
         font-size: 30px;
+        animation: 3500ms linear infinite none focus;
     }
+}
+
+@keyframes focus {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  85% {
+    transform: translateY(18px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scaleX(1.2) scaleY(1.2) translateY(18px);
+    opacity: 0;
+  }
 }
