@@ -17,6 +17,8 @@ import { MailComponent } from './mail/mail.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CfpComponent } from './pages/cfp/cfp.component';
+import { Clock } from './clock/clock.service';
 
 @NgModule({
   declarations: [
@@ -35,12 +37,13 @@ import { HomeComponent } from './pages/home/home.component';
     TicketsComponent,
     CoronavirusComponent,
     HomeComponent,
+    CfpComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ Clock ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

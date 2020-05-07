@@ -1,0 +1,54 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+header {
+    background: url(../../../assets/red.jpg) no-repeat center center $rojo;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    color: $blanco;
+
+    .caption {
+        text-align: center;
+        flex: 0 0 70%;
+        h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            width: 90%;
+            margin: 20px auto;
+            line-height: 1.1;
+            @include tablet {
+                font-size: 60px;
+            }
+            @include desktop {
+                font-size: 70px;
+            }
+            span {
+                text-decoration: underline $amarillo;    
+            }
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 80%;
+            margin: auto;
+            @include tablet {
+                font-size: 25px;
+                max-width: 50%;
+            }
+        }
+        h4 {
+            margin: 20px 0 0;
+            font-size: 30px;
+            @include tablet {
+                font-size: 45px;
+            }
+        }
+
+    }
+}
+
+p {
+    line-height: 1.5;
+}
