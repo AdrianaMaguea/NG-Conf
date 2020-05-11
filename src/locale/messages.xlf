@@ -198,7 +198,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="AngularDescription.Parragraph1" datatype="html">
-        <source>This time, the ngConf Colombia is possible thanks to the collaboration of a powerful team of local communty organizers, who bring their experience to make this an amazing event.</source>
+        <source>This time, the ngConf Colombia is possible thanks to the collaboration of a powerful team of local community organizers, who bring their experience to make this an amazing event.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
           <context context-type="linenumber">5</context>
@@ -230,6 +230,94 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
           <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Organizers.Title" datatype="html">
+        <source>OUR ORGANIZERS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Organizers.Description" datatype="html">
+        <source>A kind, entusiastic and creative team is in charge!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Organizers.CarlosAngulo.Bio" datatype="html">
+        <source>Industrial Designer with experience as a Web Developer. He is co-organizer of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Angular Medellín<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> meetup. Carlos is a passionate about UX/UI interactive design and animations.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Organizers.Giovanny.Bio" datatype="html">
+        <source>Giovanny is a software developer with more than eight years of experience, head of engineering at Waruwa, an AgTech and e-commerce Colombian startup, he is a co-organizer of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> NgColombia Bogotá<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>, he knows what communities are agents of social transformation,  Angular lover and passionate for frontend and music.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Organizers.Vanessa.Bio" datatype="html">
+        <source>Is a System Engineering with experience as a Web Developer and <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Google Developer Expert<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> and co-organizer of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GDG Medellin<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>. She is passionate about technology, books, code, design, videogames and Anime (and drawing Manga style).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Organizers.Nicolas.Bio" datatype="html">
+        <source>Electronic and industrial engineer. Passionate for software development, soccer, activism and democracy. CEO of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>PappCorn<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> and CTO of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Vaki<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>. Commited to make the internet a place with citizen empowerment tools that fix the system.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Collaborators.Title" datatype="html">
+        <source>OUR COLLABORATORS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/collaborators/collaborators.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Collaborators.Description" datatype="html">
+        <source>Every day more talented people is joining our team.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/collaborators/collaborators.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Collaborators.Leonardo.Bio" datatype="html">
+        <source>Front End Developer passionate about technology and CSS. I love to create interfaces that engage the user, full of animations, transitions and other effects that make them look alive.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/collaborators/collaborators.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Collaborators.Roger.Bio" datatype="html">
+        <source>Full stack  Developer, Microsoft Certified Software Developer, 28 years old with 10 years of great experience in the industry, with a lot of interest and experience in technical practices and design patterns.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/collaborators/collaborators.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Collaborators.JuanJose.Bio" datatype="html">
+        <source>Web developer, passionate about technology and gadgets.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/collaborators/collaborators.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Collaborators.RicardoMejia.Bio" datatype="html">
+        <source>Industrial Designer by profession, with an emphasis on visual communication and a professional training program in Motion Graphics.Co-founder / Director of Operations at PappCorn | Vaki co-founder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/collaborators/collaborators.component.html</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Tickets.Title" datatype="html">
