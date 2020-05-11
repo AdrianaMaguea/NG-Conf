@@ -107,8 +107,86 @@
         <target>NUESTROS PRESENTADORES</target>
       </trans-unit>
       <trans-unit id="Speakers.Description" datatype="html">
-        <source>OUR SPEAKERS</source>
-        <target>NUESTROS PRESENTADORES</target>
+        <source>Meet our first four confirmed super speakers. If you are an Angular fan, probably you've heard about them.</source>
+        <target>Conoce a nuestros primeros cuatro super presentadores. Si eres un fan de Angular, probablemente has escuchado de ellos.</target>
+      </trans-unit>
+      <trans-unit id="Speakers.JorgeCano.Bio" datatype="html">
+        <source>
+                Google Developer Expert in Angular - Nativescript Dev Expert <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+                ngbaires and ng-conf organizer. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+                Main architect at HeroDevs.
+            </source>
+        <target>
+            Google Developer Expert en Angular - Nativescript Dev Expert <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            Organizador de ngbaires y ng-conf.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            Arquitecto principal en HeroDevs.
+        </target>
+      </trans-unit>
+      <trans-unit id="Speakers.AaronFrost.Bio" datatype="html">
+        <source>
+            Google Developer Expert in Angular<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            ng-conf organizer. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            CEO and co-founder of HeroDevs.
+        </source>
+        <target>
+            Google Developer Expert en Angular<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            Organizador de la ng-conf. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            CEO y co-fundador de HeroDevs.
+        </target>
+      </trans-unit>
+      <trans-unit id="Speakers.KeillaMenezes.Bio" datatype="html">
+        <source>
+            Google Developer Expert in Angular and Web Technologies
+            Senior Software Development Consultant at ThoughtWorks
+        </source>
+        <target>
+            Google Developer Expert en Angular y Tecnologías Web
+            Consultor Senior en Desarrollo de Software en ThoughtWorks
+        </target>
+      </trans-unit>
+      <trans-unit id="Speakers.MinkoGechev.Bio" datatype="html">
+        <source>
+            Tools for developers at Angular team, Google. Former co-founder at Rhyme acquired by Coursera.
+        </source>
+        <target>
+            Herramientas para desarrolladores en el equipo de Angular, Google. Ex co-fundador en Rhyme adquirido por Coursera.
+        </target>
+      </trans-unit>
+      <trans-unit id="Tickets.Title" datatype="html">
+        <source>TICKETS</source>
+        <target>ENTRADAS</target>
+      </trans-unit>
+      <trans-unit id="Tickets.Description" datatype="html">
+        <source>OUR PRICING & PACKAGES</source>
+        <target>PRECIOS & PAQUETES</target>
+      </trans-unit>
+       <trans-unit id="Tickets.Conference.Title" datatype="html">
+        <source>CONFERENCE</source>
+        <target>CONFERENCIA</target>
+      </trans-unit>
+      <trans-unit id="Tickets.Conference.Description" datatype="html">
+        <source>Online Conference Ticket</source>
+        <target>Entrada a la conferencia Online</target>
+      </trans-unit>
+      <trans-unit id="Tickets.Workshop.Title" datatype="html">
+        <source>WORKSHOP</source>
+        <target>WORKSHOP</target>
+      </trans-unit>
+      <trans-unit id="Tickets.Workshop.Description" datatype="html">
+        <source>Online Workshop Ticket</source>
+        <target>Entrada al Workshop Online</target>
+      </trans-unit>
+       <trans-unit id="Tickets.Package1.Title" datatype="html">
+        <source>PACKAGE #1</source>
+        <target>PAQUETE # 1</target>
+      </trans-unit>
+      <trans-unit id="Tickets.Package1.Description" datatype="html">
+        <source>Live access to 2 workshops</source>
+        <target>Acceso en vivo a 2 workshops</target>
+      </trans-unit>
+       <trans-unit id="Tickets.CallToAction" datatype="html">
+        <source>GET STARTED</source>
+        <target>COMPRAR</target>
       </trans-unit>
     </body>
   </file>

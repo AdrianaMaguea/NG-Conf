@@ -2,6 +2,27 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="Header.WeAreBack" datatype="html">
+        <source>We are back!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Header.Description" datatype="html">
+        <source>The first and most incredible Angular conference in Latin America</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Header.SeeMore" datatype="html">
+        <source>Scroll Down</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="General.AboutTitle" datatype="html">
         <source>ABOUT</source>
         <context-group purpose="location">
@@ -50,6 +71,101 @@
           <context context-type="sourcefile">src/app/description/description.component.html</context>
           <context context-type="linenumber">18</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="Benefits.Title" datatype="html">
+        <source>What the attendees will get</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/benefits/benefits.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Benefits.Description" datatype="html">
+        <source>We are preparing an unforgettable event. We want to offer you the best of the experiences you have ever lived in a conference.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/benefits/benefits.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Benefits.Workshops.Title" datatype="html">
+        <source>WORKSHOPS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/benefits/benefits.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Benefits.Workshops.Description" datatype="html">
+        <source>A full day dedicated to four workshops, where attendees will learn from the Angular experts, the best techniques and tools to improve their productivity in real life projects.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/benefits/benefits.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Benefits.Conference.Title" datatype="html">
+        <source>THE CONFERENCE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/benefits/benefits.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Benefits.Conference.Description" datatype="html">
+        <source>A whole day that brings together 14 first-level speakers from around the world who will share with the audience their knowledge in all areas of technological development related to Angular.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/benefits/benefits.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Benefits.ForWomen.Title" datatype="html">
+        <source>WORKSHOP FOR WOMEN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/benefits/benefits.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Benefits.ForWomen.Description" datatype="html">
+        <source>Women development communities have become an important part of our DNA in Medellín. This year, a new group will be joining efforts to bring a full workshop to bring a great workshop in which many women can learn about Angular.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/benefits/benefits.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Speakers.Title" datatype="html">
+        <source>OUR SPEAKERS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/speaker/speaker.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Speakers.Description" datatype="html">
+        <source>Meet our first four confirmed super speakers. If you are an Angular fan, probably you&apos;ve heard about them.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/speaker/speaker.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Speakers.JorgeCano.Bio" datatype="html">
+        <source>
+                Google Developer Expert in Angular - Nativescript Dev Expert <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+                ngbaires and ng-conf organizer. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+                Main architect at HeroDevs.
+            </source>
+      </trans-unit>
+      <trans-unit id="Speakers.AaronFrost.Bio" datatype="html">
+        <source>
+                Google Developer Expert in Angular<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+                ng-conf organizer. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+                CEO and co-founder of HeroDevs.
+            </source>
+      </trans-unit>
+      <trans-unit id="Speakers.KeillaMenezes.Bio" datatype="html">
+        <source>
+                Google Developer Expert in Angular and Web Technologies
+                Senior Software Development Consultant at ThoughtWorks
+            </source>
+      </trans-unit>
+      <trans-unit id="Speakers.MinkoGechev.Bio" datatype="html">
+        <source>
+                Tools for developers at Angular team, Google. Former co-founder at Rhyme acquired by Coursera.
+            </source>
       </trans-unit>
     </body>
   </file>
