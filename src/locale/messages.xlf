@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="General.AboutTitle" datatype="html">
+        <source>ABOUT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description/description.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="General.NgConfColombiaTitle" datatype="html">
+        <source>NG CONF COLOMBIA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description/description.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Description.NgConfColombiaDescription" datatype="html">
+        <source>NgConf Colombia is the first Angular Conference in <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Latin America<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> It gathers a diverse mix top-notch Angular speakers from different countries all around the World. This 2-day event is full advanced workshops, keynotes and talks.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description/description.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Description.IntegrationTitle" datatype="html">
+        <source>INTEGRATION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description/description.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Description.IntegrationQuote" datatype="html">
+        <source>&quot;Building a community is not only hard work but passion.&quot;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description/description.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Description.IntegrationDescription" datatype="html">
+        <source>This is our believe, that&apos;s why this year, the conference is possible thanks to the integration of two different communities in Colombia: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Angular Medellín<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>NgColombia Bogotá<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> who have been working month by month on building a strong community all around the Country.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description/description.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="General.CovidLink" datatype="html">
+        <source>ABOUT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description/description.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
