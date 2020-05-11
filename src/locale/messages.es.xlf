@@ -188,6 +188,35 @@
         <source>GET STARTED</source>
         <target>COMPRAR</target>
       </trans-unit>
+
+      <trans-unit id="AngularDescription.SoProud" datatype="html">
+        <source>SO PROUD OF BEING</source>
+        <target>ESTAMOS ORGULLOSOS DE SER</target>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Title" datatype="html">
+        <source>A NATION-WIDE COMMUNITY</source>
+        <target>UNA COMUNIDAD NACIONAL</target>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Parragraph1" datatype="html">
+        <source>This time, the ngConf Colombia is possible thanks to the collaboration of a powerful team of local communty organizers, who bring their experience to make this an amazing event.</source>
+        <target>Esta vez, la ngConf Colombia es posible gracias a la colaboración de un poderoso equipo de organizadores de comunidad locales, quienes traen su experiencia para hacer de este un grandioso evento.</target>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Parragraph2" datatype="html">
+        <source>Our main goal is to provide the best experience with the most up-to-date content. Over 2 years, we have been positively impacting a large number of developers who have found in Angular the best front end development framework.</source>
+        <target>Nuestra meta principal es proveer la mejor experiencia con el contenido más actualizado. Por 2 años, hemos impactado positivamente un gran número de desarrolladores quienes han encontrado en Angular como el mejor framework de desarrollo frond end.</target>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Workshops" datatype="html">
+        <source>Workshops</source>
+        <target>Workshops</target>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Meetups" datatype="html">
+        <source>Meetups</source>
+        <target>Meetups</target>
+      </trans-unit>
+      <trans-unit id="AngularDescription.ActiveMembers" datatype="html">
+        <source>Active Members</source>
+        <target>Miembros Activos</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

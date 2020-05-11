@@ -148,6 +148,10 @@
                 ngbaires and ng-conf organizer. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                 Main architect at HeroDevs.
             </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/speaker/speaker.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="Speakers.AaronFrost.Bio" datatype="html">
         <source>
@@ -155,17 +159,149 @@
                 ng-conf organizer. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                 CEO and co-founder of HeroDevs.
             </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/speaker/speaker.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="Speakers.KeillaMenezes.Bio" datatype="html">
         <source>
                 Google Developer Expert in Angular and Web Technologies
                 Senior Software Development Consultant at ThoughtWorks
             </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/speaker/speaker.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="Speakers.MinkoGechev.Bio" datatype="html">
         <source>
                 Tools for developers at Angular team, Google. Former co-founder at Rhyme acquired by Coursera.
             </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/speaker/speaker.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AngularDescription.SoProud" datatype="html">
+        <source>SO PROUD OF BEING</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Title" datatype="html">
+        <source>A NATION-WIDE COMMUNITY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Parragraph1" datatype="html">
+        <source>This time, the ngConf Colombia is possible thanks to the collaboration of a powerful team of local communty organizers, who bring their experience to make this an amazing event.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Parragraph2" datatype="html">
+        <source>Our main goal is to provide the best experience with the most up-to-date content. Over 2 years, we have been positively impacting a large number of developers who have found in Angular the best front end development framework.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Workshops" datatype="html">
+        <source>Workshops</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AngularDescription.Meetups" datatype="html">
+        <source>Meetups</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AngularDescription.ActiveMembers" datatype="html">
+        <source>Active Members</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/description-angular/description-angular.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.Title" datatype="html">
+        <source>TICKETS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.Description" datatype="html">
+        <source>OUR PRICING &amp; PACKAGES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.Conference.Title" datatype="html">
+        <source>CONFERENCE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.Conference.Description" datatype="html">
+        <source>Online Conference Ticket</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.CallToAction" datatype="html">
+        <source>GET STARTED</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.Workshop.Title" datatype="html">
+        <source>WORKSHOP</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.Workshop.Description" datatype="html">
+        <source>Online Workshop Ticket</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.Package1.Title" datatype="html">
+        <source>PACKAGE #1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Tickets.Package1.Description" datatype="html">
+        <source>Live access to 2 workshops</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tickets/tickets.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
       </trans-unit>
     </body>
   </file>
