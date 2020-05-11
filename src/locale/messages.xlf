@@ -252,6 +252,9 @@
           <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
           <context context-type="linenumber">11</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="Organizers.Adriana.Bio" datatype="html">
+        <source>Web UI Developer student. She is co-organizer of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Angular Medellín<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> meetup. Passionate about technology and gadgets. Terrific Speaker and an amazing dancer.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organizer/organizer.component.html</context>
           <context context-type="linenumber">17</context>
@@ -318,6 +321,50 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/collaborators/collaborators.component.html</context>
           <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Sponsors.Title" datatype="html">
+        <source> Why are we Holding this conference?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sponsor/sponsor.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Sponsors.Paragraph1" datatype="html">
+        <source>In addition to being a solid framework in constant evolution accompanied by an important number of tools that complement its operation, what makes Angular great worldwide is its community: Periodically around the world a lot of developers meet in local meetups to share and update their knowledge on this technology.
+
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sponsor/sponsor.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Sponsors.Paragraph2" datatype="html">
+        <source>In addition, more and more countries around the world hold an annual conference that brings together a larger number of international assistants and speakers to offer an experience of great complexity and impact.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sponsor/sponsor.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Sponsors.Paragraph3" datatype="html">
+        <source>In our region of Latin America, Colombia pioneered the 2017 and 2018 versions of Ng Colombia in which more than 500 attendees, 20 speakers from all over the world and 6 workshops can be counted. Since its creation, this conference has been characterized by taking care of all the details and providing an unforgettable experience.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sponsor/sponsor.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Mail.Title" datatype="html">
+        <source>Do you want to be updated?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/mail/mail.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Mail.EmailAddress" datatype="html">
+        <source>Email Address </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/mail/mail.component.html</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Tickets.Title" datatype="html">

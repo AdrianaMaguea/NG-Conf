@@ -270,6 +270,45 @@
         <source>Industrial Designer by profession, with an emphasis on visual communication and a professional training program in Motion Graphics.Co-founder / Director of Operations at PappCorn | Vaki co-founder</source>
         <target>Diseñador Industrial de profesión, con un énfasis en comunicación visual y un programa de formación profesional en Motion Graphics. Co-fundador / Director de Operaciones en PappCorn | Co-fundador Vaki</target>
       </trans-unit>
+
+      <trans-unit id="Sponsors.Title" datatype="html">
+        <source> Why are we Holding this conference?</source>
+        <target> Porqué estamos celebrando esta conferencia?</target>
+
+      </trans-unit>
+      <trans-unit id="Sponsors.Paragraph1" datatype="html">
+        <source>In addition to being a solid framework in constant evolution accompanied by an important number of tools that complement its operation, what makes Angular great worldwide is its community: Periodically around the world a lot of developers meet in local meetups to share and update their knowledge on this technology.
+
+        </source>
+        <target>
+          En adición a ser un framework sólido en constante evolución, acompañado de una gran cantidad de herramientas que complementan su operación, lo que hace de Angular algo asombroso en el mundo es su comunidad: Muchos desarrolladores al rededor del mundo se reúnen periódicamente en meetups locales para compartir y actualizar sus conocimientos en esta tecnología.
+        </target>
+      </trans-unit>
+      <trans-unit id="Sponsors.Paragraph2" datatype="html">
+        <source>In addition, more and more countries around the world hold an annual conference that brings together a larger number of international assistants and speakers to offer an experience of great complexity and impact.</source>
+        <target>
+          Adicionalmente, más y más países en el mundo realizan una conferencia anual que atrae cada vez más asistentes y presentadores internacionales para ofrecer una experiencia de gran complejidad e impacto.</target>
+      </trans-unit>
+      <trans-unit id="Sponsors.Paragraph3" datatype="html">
+        <source>In our region of Latin America, Colombia pioneered the 2017 and 2018 versions of Ng Colombia in which more than 500 attendees, 20 speakers from all over the world and 6 workshops can be counted. Since its creation, this conference has been characterized by taking care of all the details and providing an unforgettable experience.</source>
+        <target>En nuestra, Latino América, Colombia inició con las versiones de 2017 y 2018 de Ng Colombia en las cuales más de  500 participantes, 20 presentadores de todo el mundo y 6 workshops fueron contados. Desde su creación, esta conferencia se ha caracterizado por tener en cuenta todos los detalles y proveer una experiencia inolvidable.</target>
+
+      </trans-unit>
+      <trans-unit id="Mail.Title" datatype="html">
+        <source>Do you want to be updated?</source>
+        <target>Quieres recibir las últimas actualizaciones?</target>
+
+      </trans-unit>
+      <trans-unit id="Mail.EmailAddress" datatype="html">
+        <source>Email Address </source>
+        <target>Correo Electrónico </target>
+
+      </trans-unit>
+      <trans-unit id="Mail.Subscribe" datatype="html">
+        <source>Subscribe</source>
+        <target>Suscribirse</target>
+
+      </trans-unit>
     </body>
   </file>
 </xliff>
