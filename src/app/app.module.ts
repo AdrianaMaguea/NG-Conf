@@ -17,12 +17,16 @@ import { MailComponent } from './mail/mail.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CfpComponent } from './pages/cfp/cfp.component';
+import { Clock } from './clock/clock.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ResponsiveLogoComponent } from './shared/responsive-logo/responsive-logo.component';
+import { SponsorshipComponent } from './pages/sponsorship/sponsorship.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +45,9 @@ import { ResponsiveLogoComponent } from './shared/responsive-logo/responsive-log
     TicketsComponent,
     CoronavirusComponent,
     HomeComponent,
+    CfpComponent,
     ResponsiveLogoComponent,
+    SponsorshipComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +57,7 @@ import { ResponsiveLogoComponent } from './shared/responsive-logo/responsive-log
     MatButtonModule,
     MatIconModule,
   ],
-  providers: [],
+  providers: [ Clock ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
