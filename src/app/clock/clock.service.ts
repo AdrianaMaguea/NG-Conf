@@ -6,43 +6,46 @@ import { map, shareReplay } from 'rxjs/operators';
   providedIn: 'root'
 })
 
-export class ValorReloj {
-  hora: number;
-  minutos: string;
-  ampm: string;
-  diadesemana: string;
-  diaymes: string;
-  segundo: string;
+export class ValCountDown {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
 }
 
 export class Clock {
 
   clock: Observable <Date>;
-  infofecha$ = new Subject<ValorReloj>();
-  vr: ValorReloj;
-  ampm: string;
-  hours: number;
-  minute: string;
-  weekday: string;
-  months: string;
+  infofecha$ = new Subject<ValCountDown>();
+  vc: ValCountDown;
+  countDownDate: number;
   
   constructor() {
-    this.clock = timer(0,1000).pipe(map(t => new Date()),shareReplay(1));
+    this.countDownDate = new Date("May 31, 2020 23:59:59").getTime();
+    this.clock = timer(0,1000).pipe(
+      map( t => new Date() ),
+      shareReplay(1)
+    );
   }
   
-  getInfoReloj(): Observable<ValorReloj>{
+  getInfoReloj(): Observable<ValCountDown>{
     this.clock.subscribe( t => {
-    this.hours = t.getHours() % 12;
-    this.hours = this.hours ? this.hours : 12;
-      this.vr = {
-        hora: this.hours,
-        minutos: (t.getMinutes() < 10) ? '0' + t.getMinutes() : t.getMinutes().toString(),
-        ampm: t.getHours() > 11 ? 'PM' : 'AM',
-        diaymes: t.toLocaleString('es-MX', { day: '2-digit', month: 'long' }).replace('.', '').replace('-', ' '),
-        diadesemana: t.toLocaleString('es-MX', { weekday: 'long' }).replace('.', ''),
-        segundo: t.getSeconds() < 10 ? '0' + t.getSeconds() : t.getSeconds().toString()
+
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = this.countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+      this.vc = {
+        days: days,
+        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((distance % (1000 * 60)) / 1000)
       }
-      this.infofecha$.next(this.vr);
+      this.infofecha$.next(this.vc);
     });
     return this.infofecha$.asObservable();
   }

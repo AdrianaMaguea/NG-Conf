@@ -1,0 +1,17 @@
+:host {
+  --color: #fff;
+  --width: 48px;
+  --height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg.svg {
+  width: var(--width);
+  height: var(--height);
+}
+
+.path {
+  fill: var(--color);
+}

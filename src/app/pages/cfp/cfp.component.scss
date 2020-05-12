@@ -4,45 +4,66 @@
 header {
     background: url(../../../assets/red.jpg) no-repeat center center $rojo;
     background-size: cover;
-    height: 40vh;
-    display: flex;
     align-items: center;
     color: $blanco;
-
-    .caption {
-        text-align: center;
-        flex: 0 0 70%;
+    text-align: left;
+    .header-container {
+        margin: auto;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        align-items: center;
+        justify-content: center;
+        @include tablet () {
+            flex-direction: row;
+        } 
+    }
+    .img {
+        flex: 0 0 40%;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 250px;
+            @include tablet () {
+                max-width: 500px;
+            }
+        }
+    }
+    .announce {
+        flex: 0 0 47%;
         h1 {
+            text-align: center;
             font-size: 40px;
             text-transform: uppercase;
-            width: 90%;
-            margin: 20px auto;
-            line-height: 1.1;
+            font-weight: 500;
             @include tablet {
-                font-size: 60px;
-            }
-            @include desktop {
-                font-size: 70px;
+                font-size: 50px;
+                text-align: left;
             }
             span {
-                text-decoration: underline $amarillo;    
+                font-weight: 900;
+                display: block;
+                text-decoration: underline $amarillo; 
             }
         }
 
         p {
             font-size: 20px;
-            max-width: 80%;
-            margin: auto;
+            text-transform: uppercase;
+            text-align: center;
             @include tablet {
                 font-size: 25px;
-                max-width: 50%;
+                text-align: left;
             }
         }
         h4 {
             margin: 20px 0 0;
             font-size: 30px;
+            text-align: center;
             @include tablet {
                 font-size: 45px;
+                text-align: left;
             }
         }
 
@@ -51,4 +72,208 @@ header {
 
 p {
     line-height: 1.5;
+}
+
+.categories {
+    background-color: #32c5f4;
+    text-align: center;
+    h3 {
+        margin: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        margin: 40px 0 0;
+    }
+
+    h2 {
+        font-family: $mainfont;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .contenido-secundario {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @include tablet () {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .card {
+            margin-bottom: 1rem;
+            flex: 0 1 calc(50% - 1rem);
+            padding: 20px 0;
+            margin-bottom: 0;
+
+            @include tablet () {
+                flex: 0 1 calc(33% - 1rem);
+                padding: 70px 40px 0;
+            }
+
+            svg {
+                width: 50%;
+                color: $rojo;
+                display: block;
+                margin: 0px auto 40px;
+                font-size: 80px;
+                margin-bottom: 22px;
+            }
+        }
+    }
+
+    .contenido {
+        color: $negro;
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: inline-block;
+    margin: auto;
+    background-color: #fee600;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 15px;
+    color: #262626;
+}
+
+.inspiration {
+    background-color: #F2F2F2;
+    .split-section {
+        align-items: center;
+    }
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        margin-block-start: 40px;
+        justify-content: space-around;
+        @include tablet () {
+            flex-direction: row;
+        }
+        h2 {
+            margin: 0;
+            color: $azul;
+            font-size: 56px;
+        }
+        div {
+            padding: 0px 15px;
+            text-align: center;
+        }
+    }
+    
+    .info {
+        flex-basis: 800px;
+        padding: 0;
+        padding-inline-end: 20px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #CCC;
+            &:first-child {
+                border-top: 1px solid #CCC;
+            }
+        }
+        svg {
+            margin-right: 8px;
+        }
+    }
+    
+    .img img {
+      max-width: unset;
+    }
+
+    .items {
+        background: url(../../../assets/logo-08.png) no-repeat center center;
+        background-size: contain;
+        text-align: center;
+        padding: 20px 0;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+        }
+        a {
+            background-color: #fee600;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 6px;
+            border: 1px solid #E1E1E1;
+            // box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+            margin: 5px;
+            font-weight: normal;
+            color: #262626;
+        }
+    }
+    
+}
+
+.countdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #32c5f4;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0 20px;
+    @include tablet () {
+        flex-direction: row;
+    }
+    h4 {
+        padding: 0 40px;
+        text-transform: uppercase;
+        margin: 0;
+        width: 400px;
+        @include tablet () {
+            width: unset;
+        }
+    }
+    span {
+        display: inline-block;
+        font-size: 14px;
+        margin-right: 5px;
+        font-weight: normal;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 8px;
+        padding-bottom: 5px;
+        border: 3px solid #FFF;
+        @include tablet () {
+            border: medium none;
+            padding-bottom: 0px;
+            margin-bottom: 0;
+        }
+    }
+    em {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        padding: 20px 0 10px;
+        display: block;
+        border-radius: 8px;
+        width: 110px;
+        @include tablet () {
+            margin-bottom: 8px;
+            padding: 20px 0;
+            border: 3px solid #FFF;
+        }
+    }
 }

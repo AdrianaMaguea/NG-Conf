@@ -66,7 +66,7 @@ a {
     > div {
         flex: 0 1 50%;
     }
-    
+
     .info {
         padding: 40px 0;
         color: $negro;
@@ -85,7 +85,7 @@ a {
     }
 
     h2 {
-        font-size: 40px; 
+        font-size: 40px;
         font-weight: 800;
         line-height: 1.1;
         @include tablet {
@@ -96,7 +96,7 @@ a {
     h3 {
         font-size: 20px;
     }
-    
+
     .img {
         display: flex;
         justify-content: center;

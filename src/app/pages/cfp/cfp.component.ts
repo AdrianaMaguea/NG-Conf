@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Clock, ValorReloj } from '../../clock/clock.service';
+import { Clock, ValCountDown } from '../../clock/clock.service';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -8,26 +8,28 @@ import { Observable } from 'rxjs';
   styleUrls: ['./cfp.component.scss']
 })
 export class CfpComponent implements OnInit {
-  datos$: Observable<ValorReloj>;
+  datos$: Observable<ValCountDown>;
   hora: number;
   minutos: string;
   dia: string;
   fecha: string;
   ampm: string;
   segundos: string;
+  daysLeft: number;
+  hoursLeft: number;
+  minutesLeft: number;
+  secondsLeft: number;
 
   constructor(private segundo: Clock) {
   }
 
   ngOnInit(): void {
     this.datos$=this.segundo.getInfoReloj();
-    this.datos$.subscribe(x => {
-      this.hora = x.hora;
-      this.minutos = x.minutos;
-      this.dia = x.diadesemana;
-      this.fecha = x.diaymes;
-      this.ampm = x.ampm;
-      this.segundos = x.segundo
+    this.datos$.subscribe( x => {
+      this.daysLeft = x.days;
+      this.hoursLeft = x.hours;
+      this.minutesLeft = x.minutes;
+      this.secondsLeft = x.seconds;
     });
   }
 
