@@ -2,18 +2,18 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="es-ES">
     <body>
-    <trans-unit id="Header.WeAreBack" datatype="html">
-        <source>We are back!</source>
-        <target>Estamos devuelta!</target>
-    </trans-unit>
-    <trans-unit id="Header.Description" datatype="html">
-        <source>The first and most incredible Angular conference in Latin America</source>
-        <target>La primera y más increíble conferencia de Angular en Latino América</target>
-    </trans-unit>
-     <trans-unit id="Header.SeeMore" datatype="html">
-        <source>Scroll Down</source>
-        <target>Scroll para Ver más</target>
-    </trans-unit>
+      <trans-unit id="Header.WeAreBack" datatype="html">
+          <source>We are back!</source>
+          <target>Estamos devuelta!</target>
+      </trans-unit>
+      <trans-unit id="Header.Description" datatype="html">
+          <source>The first and most incredible Angular conference in Latin America</source>
+          <target>La primera y más increíble conferencia de Angular en Latino América</target>
+      </trans-unit>
+      <trans-unit id="Header.SeeMore" datatype="html">
+          <source>Scroll Down</source>
+          <target>Scroll para Ver más</target>
+      </trans-unit>
       <trans-unit id="General.AboutTitle" datatype="html">
         <source>ABOUT</source>
         <target>ACERCA DE</target>
@@ -274,11 +274,9 @@
       <trans-unit id="Sponsors.Title" datatype="html">
         <source> Why are we Holding this conference?</source>
         <target> Porqué estamos celebrando esta conferencia?</target>
-
       </trans-unit>
       <trans-unit id="Sponsors.Paragraph1" datatype="html">
         <source>In addition to being a solid framework in constant evolution accompanied by an important number of tools that complement its operation, what makes Angular great worldwide is its community: Periodically around the world a lot of developers meet in local meetups to share and update their knowledge on this technology.
-
         </source>
         <target>
           En adición a ser un framework sólido en constante evolución, acompañado de una gran cantidad de herramientas que complementan su operación, lo que hace de Angular algo asombroso en el mundo es su comunidad: Muchos desarrolladores al rededor del mundo se reúnen periódicamente en meetups locales para compartir y actualizar sus conocimientos en esta tecnología.
@@ -292,22 +290,44 @@
       <trans-unit id="Sponsors.Paragraph3" datatype="html">
         <source>In our region of Latin America, Colombia pioneered the 2017 and 2018 versions of Ng Colombia in which more than 500 attendees, 20 speakers from all over the world and 6 workshops can be counted. Since its creation, this conference has been characterized by taking care of all the details and providing an unforgettable experience.</source>
         <target>En nuestra, Latino América, Colombia inició con las versiones de 2017 y 2018 de Ng Colombia en las cuales más de  500 participantes, 20 presentadores de todo el mundo y 6 workshops fueron contados. Desde su creación, esta conferencia se ha caracterizado por tener en cuenta todos los detalles y proveer una experiencia inolvidable.</target>
-
       </trans-unit>
       <trans-unit id="Mail.Title" datatype="html">
         <source>Do you want to be updated?</source>
         <target>Quieres recibir las últimas actualizaciones?</target>
-
       </trans-unit>
       <trans-unit id="Mail.EmailAddress" datatype="html">
         <source>Email Address </source>
         <target>Correo Electrónico </target>
-
       </trans-unit>
       <trans-unit id="Mail.Subscribe" datatype="html">
         <source>Subscribe</source>
         <target>Suscribirse</target>
       </trans-unit>
+
+      <trans-unit id="CFP.Header1" datatype="html">
+        <source>Hurry up<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>our CFP is open!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>¡No tardes <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>nuestro CFP está abierto!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="CFP.Header2" datatype="html">
+        <source>the call is open until</source>
+        <target>el llamado está disponible hasta</target>
+      </trans-unit>
+      <trans-unit id="CFP.Invite" datatype="html">
+        <source>You are invited to participate!</source>
+        <target>¡Participa!</target>
+      <trans-unit id="CFP.Paragraph1" datatype="html">
+        <source>We are pleased to announce our call for Speakers will be opened until next May 31, we will be receiving all the proposals for conducting talks and workshops on all topics related to Angular and front end development technologies. </source>
+        <target>Nos complace anunciar que nuestra convocatoria de oradores se abrirá hasta el próximo 31 de mayo, recibiremos todas las propuestas para realizar charlas y talleres sobre todos los temas relacionados con las tecnologías de desarrollo angular y front-end.</target>
+      </trans-unit>
+      <trans-unit id="CFP.Paragraph2" datatype="html">
+        <source>No matter the country you come from, your experience or the language you speak, if you want to participate, we welcome you. We want to inspire as many people around the world as possible and that is why your participation and the energy you can impress on it is so important to us. Remember: this time, our conference will be 100% virtual, so, as a speaker you don't have to move from your country to our beautiful Medellín.</source>
+        <target>No importa el país de donde viene, su experiencia o el idioma que habla, si desea participar, le damos la bienvenida. Queremos inspirar a tantas personas en todo el mundo como sea posible y es por eso que su participación y la energía que puede impresionar es tan importante para nosotros. Recuerde: esta vez, nuestra conferencia será 100% virtual, por lo que, como orador, no tendrá que mudarse de su país a nuestra hermosa Medellín.</target>
+      </trans-unit>
+      <trans-unit id="CFP.Paragraph3" datatype="html">
+        <source>If this is your first time speaking for a conference, don't worry, we have a team of experts who will guide you step by step through the different preparation and start-up phases.</source>
+        <target>Si es la primera vez que habla en una conferencia, no se preocupe, tenemos un equipo de expertos que lo guiará paso a paso a través de las diferentes fases de preparación y puesta en marcha.</target>
+      </trans-unit>
+      
     </body>
   </file>
 </xliff>
