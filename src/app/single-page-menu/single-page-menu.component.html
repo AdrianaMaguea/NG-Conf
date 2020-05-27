@@ -1,4 +1,22 @@
-<mat-toolbar>
+<ul class="reduced">
+  <li>
+    <button mat-button data-target="#when">Date</button>
+  </li>
+  <li>
+    <button mat-button data-target="#description">About</button>
+  </li>
+  <li>
+    <app-responsive-logo [width]="'46px'" [height]="'46px'" color="#FFF"></app-responsive-logo>
+  </li>
+  <li>
+    <button mat-button data-target="#speakers">CFP</button>
+  </li>
+  <li>
+    <button mat-button data-target="#tickets">Sponsorship</button>
+  </li>
+</ul>
+
+<!-- <mat-toolbar>
   <div class="content-wrapper" [class.mobile]="showMobileNavBar">
     <div class="logo">
       <app-responsive-logo [width]="'54px'" [height]="'54px'" color="#fff"></app-responsive-logo>
@@ -51,4 +69,4 @@
       </li>
     </ul>
   </div>
-</mat-toolbar>
+</mat-toolbar> -->

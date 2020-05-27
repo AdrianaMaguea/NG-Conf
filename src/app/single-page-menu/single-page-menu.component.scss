@@ -3,8 +3,36 @@
 
 $toolbar-height: 66px;
 $transition-time: 300ms;
-$navBarBackgroundColor: #000;
+$navBarBackgroundColor: transparent;
 $mobileIconSize: 32px;
+
+ul.reduced {
+  background-color: black;
+  border-radius: 0 0 30px 30px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  button {
+    text-transform: uppercase;
+    font-family: $titlefont;
+    font-weight: 700;
+  }
+  app-responsive-logo {
+    background-color: $azul;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    svg path {
+      stroke: white;
+    }
+  }
+}
 
 :host {
   display: block;

@@ -277,3 +277,184 @@ p {
         }
     }
 }
+
+.recommend, .criteria {
+    margin: 0;
+    padding: 30px 0;
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        @include tablet () {
+            font-size: 40px;
+        }
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.recommend {
+    padding: 0;
+    background-color: $amarillo;
+    .split-section { 
+        align-items: center;
+    }
+    h3 {
+        margin: 35px 0 20px;
+    }
+    .brief {
+        @include tablet () {
+            padding: 0 30px 0 0;
+        }
+        h2 {
+            text-align: left;
+        }
+        ul {
+            background-color: rgba(255,255,255,0.6);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        li {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding: 10px 0;
+            &:last-child {
+                border-bottom: medium none;
+            }
+        }
+        svg {
+            margin-right: 15px;
+        }
+    }
+    .support {
+        ul {
+            text-align: center;
+            @include tablet () {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+            }
+        }
+        li {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-weight: 700;
+            @include telefono () {
+                flex: 0 0 50%;
+            }
+            @include tablet () {
+                flex: 0 0 33%;
+            }
+        }
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+    img {
+        display: block;
+        width: 60%;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+
+.criteria {
+    background-color: #F2F2F2;
+    h2 {
+        margin: 30px 0 0;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 1.6em;
+    }
+    h4 {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 1.6em;
+    }
+    .criteria__items {
+        @include tablet () {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        li {
+            background-color: $azul;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 0 10px;
+            @include tablet () {
+                flex: 0 0 49%;
+                &:nth-child(odd) {
+                    text-align: right;
+                }
+            }
+            font-size: 13px;
+            svg {
+                float: right;
+                margin-left: 15px; 
+            }
+        }
+    }
+    .split-section {
+        > div {
+            &:first-child {
+                flex: 0 0 40%;
+            }
+            &:last-child {
+                flex: 0 0 60%;
+            }
+        }
+    }
+}
+
+.evaluation {
+    text-align: center;
+    h2 {
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    &__process{
+        text-align: left;
+        list-style: none;
+        margin: 40px auto 0;
+        padding: 40px 20px 20px;
+        background-color: #FAFAFA;
+        border-radius: 20px;
+        max-width: 800px;
+        position: relative;
+        border: 8px solid $azul;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -30px;
+            margin-top: -30px;
+            width: 60px;
+            height: 60px;
+            padding: 0;
+            background: url(../../../assets/logo-responsive.svg) no-repeat center center white;
+            background-size: 85%;
+            border-radius: 50%;
+            z-index: 100;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            &-top {
+                top: 0;
+                bottom: unset;
+                margin-top: -30px;
+            }
+        }
+    }
+    li {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        &:last-child {
+            border-bottom: medium none;
+        }
+    }
+
+}
