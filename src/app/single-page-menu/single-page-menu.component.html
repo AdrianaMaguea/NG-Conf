@@ -1,25 +1,7 @@
-<ul class="reduced">
-  <li>
-    <button mat-button data-target="#when">Date</button>
-  </li>
-  <li>
-    <button mat-button data-target="#description">About</button>
-  </li>
-  <li>
-    <app-responsive-logo [width]="'46px'" [height]="'46px'" color="#FFF"></app-responsive-logo>
-  </li>
-  <li>
-    <button mat-button data-target="#speakers">CFP</button>
-  </li>
-  <li>
-    <button mat-button data-target="#tickets">Sponsorship</button>
-  </li>
-</ul>
-
-<!-- <mat-toolbar>
+<mat-toolbar>
   <div class="content-wrapper" [class.mobile]="showMobileNavBar">
     <div class="logo">
-      <app-responsive-logo [width]="'54px'" [height]="'54px'" color="#fff"></app-responsive-logo>
+      <app-responsive-logo data-target="#when" [width]="'54px'" [height]="'54px'"></app-responsive-logo>
     </div>
 
     <div class="mobile-menu" *ngIf="showMobileNavBar" >
@@ -37,14 +19,14 @@
       [@slideInOutVertical]="mobileMenuState"
       >
       <div class="selection-indicator"></div>
-      <li>
+      <!-- <li>
         <button mat-button data-target="#when">Date</button>
       </li>
       <li>
-        <button mat-button data-target="#description">About</button>
-      </li>
-      <li>
         <button mat-button data-target="#benefits">Benefits</button>
+      </li> -->
+      <li>
+        <button mat-button class="external-link coronavirus" routerLink="/coronavirus">COVID-19</button>
       </li>
       <li>
         <button mat-button data-target="#speakers">Speakers</button>
@@ -55,18 +37,21 @@
       <li>
         <button mat-button data-target="#comunity">Community</button>
       </li>
-      <li>
+      <!-- <li>
         <button mat-button data-target="#organizers">Organizers</button>
       </li>
       <li>
         <button mat-button data-target="#collaborators">Collaborators</button>
+      </li> -->
+      <li>
+        <button mat-button class="external-link sponsorship" routerLink="/sponsorship">Sponsors</button>
       </li>
       <li>
-        <button mat-button data-target="#sponsors">Sponsors</button>
+        <button mat-button class="external-link cfp" routerLink="/cfp">CFP</button>
       </li>
       <li>
         <button mat-button data-target="#mail">Mail</button>
       </li>
     </ul>
   </div>
-</mat-toolbar> -->
+</mat-toolbar>

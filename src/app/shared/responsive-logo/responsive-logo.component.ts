@@ -18,7 +18,6 @@ export class ResponsiveLogoComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
     for (const key in changes) {
       if (changes.hasOwnProperty(key)) {
         this.nativeElement.style.setProperty(`--${key}`, `${String(changes[key].currentValue)}`);

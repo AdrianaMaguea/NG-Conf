@@ -7,6 +7,7 @@ header {
     align-items: center;
     color: $blanco;
     text-align: left;
+    padding-top: $top-menu-height;
     .header-container {
         margin: auto;
         max-width: 1600px;
@@ -17,7 +18,7 @@ header {
         justify-content: center;
         @include tablet () {
             flex-direction: row;
-        } 
+        }
     }
     .img {
         flex: 0 0 40%;
@@ -44,7 +45,7 @@ header {
             span {
                 font-weight: 900;
                 display: block;
-                text-decoration: underline $amarillo; 
+                text-decoration: underline $amarillo;
             }
         }
 
@@ -170,7 +171,7 @@ p {
             text-align: center;
         }
     }
-    
+
     .info {
         flex-basis: 800px;
         padding: 0;
@@ -192,7 +193,7 @@ p {
             margin-right: 8px;
         }
     }
-    
+
     .img img {
       max-width: unset;
     }
@@ -222,7 +223,7 @@ p {
             color: #262626;
         }
     }
-    
+
 }
 
 .countdown {
@@ -299,7 +300,7 @@ p {
 .recommend {
     padding: 0;
     background-color: $amarillo;
-    .split-section { 
+    .split-section {
         align-items: center;
     }
     h3 {
@@ -395,7 +396,7 @@ p {
             font-size: 13px;
             svg {
                 float: right;
-                margin-left: 15px; 
+                margin-left: 15px;
             }
         }
     }

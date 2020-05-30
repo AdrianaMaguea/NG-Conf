@@ -15,19 +15,29 @@
   background-size: cover;
   height: 30vh;
 
-  h2 {
-    text-align: right;
-    color: $blanco;
-    font-size: 30px;
-    padding: 70px;
-    @include tablet {
-      font-size: 50px;
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      opacity: 0.85;
+      background-color: rgba(0,0,0,0.1);
     }
-    a {
+
+    h2 {
       color: $amarillo;
-      span {
-        color: white;
+      text-align: right;
+      font-size: 30px;
+      padding: 70px;
+      @include tablet {
+        font-size: 50px;
       }
+        span {
+          color: white;
+        }
     }
   }
 }

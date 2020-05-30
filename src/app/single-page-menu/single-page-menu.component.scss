@@ -1,38 +1,9 @@
 @import '_variables';
 @import '_mixins';
 
-$toolbar-height: 66px;
 $transition-time: 300ms;
-$navBarBackgroundColor: transparent;
+$navBarBackgroundColor: #000;
 $mobileIconSize: 32px;
-
-ul.reduced {
-  background-color: black;
-  border-radius: 0 0 30px 30px;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  list-style: none;
-  padding: 5px 0;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  button {
-    text-transform: uppercase;
-    font-family: $titlefont;
-    font-weight: 700;
-  }
-  app-responsive-logo {
-    background-color: $azul;
-    border-radius: 50%;
-    padding: 5px;
-    cursor: pointer;
-    svg path {
-      stroke: white;
-    }
-  }
-}
 
 :host {
   display: block;
@@ -46,7 +17,7 @@ mat-toolbar {
   position: fixed;
   top: 0;
   z-index: 10000;
-  height: $toolbar-height;
+  height: $top-menu-height;
   background: $navBarBackgroundColor;
   color: #FFFFFF;
 
@@ -72,6 +43,7 @@ mat-toolbar {
     align-items: center;
     flex-grow: 0;
     margin-left: 20px;
+    cursor: pointer;
 
     img {
       max-height: 70%;
@@ -92,7 +64,7 @@ mat-toolbar {
       align-items: center;
       flex-grow: 1;
       font-size: 1.2em;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       z-index: 3;
       opacity: 1;
     }
@@ -137,7 +109,7 @@ mat-toolbar {
 
     &.mobile {
       position: absolute;
-      top: $toolbar-height - 1px;
+      top: $top-menu-height - 1px;
       right: 0;
       flex-direction: column;
       background: $navBarBackgroundColor;
