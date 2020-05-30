@@ -8,8 +8,13 @@ p {
 .caption {
     background: url(../../../assets/nuestroplan.png) no-repeat center;
     background-size: cover;
-    height: 50vh;
     padding-top: $top-menu-height;
+    padding-bottom: 10px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     h1 {
         padding-top: 40px;
         margin: 0;
