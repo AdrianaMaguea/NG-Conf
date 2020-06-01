@@ -21,7 +21,7 @@ export class Clock {
   countDownDate: number;
   
   constructor() {
-    this.countDownDate = new Date("May 31, 2020 23:59:59").getTime();
+    this.countDownDate = new Date("Jun 15, 2020 23:59:59").getTime();
     this.clock = timer(0,1000).pipe(
       map( t => new Date() ),
       shareReplay(1)
