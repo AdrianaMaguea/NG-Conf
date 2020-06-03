@@ -1,319 +1,335 @@
-@import '../../../sass/variables';
-@import '../../../sass/mixins';
+@import "../../../sass/variables";
+@import "../../../sass/mixins";
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 header {
-    background: url(../../../assets/red.jpg) no-repeat center center $rojo;
-    background-size: cover;
+  background: url(../../../assets/red.jpg) no-repeat center center $rojo;
+  background-size: cover;
+  align-items: center;
+  color: $blanco;
+  text-align: center;
+  .header-container {
+    margin: auto;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
     align-items: center;
-    color: $blanco;
-    text-align: center;
-    .header-container {
-        margin: auto;
-        max-width: 1600px;
-        display: flex;
-        flex-direction: column;
-        padding: 30px 20px;
-        align-items: center;
-        justify-content: center;
-        @include tablet () {
-            flex-direction: row;
-        }
+    justify-content: center;
+    @include tablet() {
+      flex-direction: row;
     }
-    .img {
-        flex: 0 0 40%;
-        img {
-            display: block;
-            width: 100%;
-            max-width: 250px;
-            margin: auto;
-            @include tablet () {
-                max-width: 400px;
-            }
-        }
+  }
+  .img {
+    flex: 0 0 40%;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 250px;
+      margin: auto;
+      @include tablet() {
+        max-width: 400px;
+      }
     }
-    .announce {
-        flex: 0 0 47%;
-        h1 {
-            text-align: center;
-            font-size: 40px;
-            text-transform: uppercase;
-            font-weight: 500;
-            @include tablet {
-                font-size: 50px;
-            }
-            span {
-                font-weight: 900;
-                display: block;
-                text-decoration: underline $amarillo; 
-            }
-        }
+  }
+  .announce {
+    flex: 0 0 47%;
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 500;
+      @include tablet {
+        font-size: 50px;
+      }
+      span {
+        font-weight: 900;
+        display: block;
+        text-decoration: underline $amarillo;
+      }
+    }
 
-        p {
-            font-size: 20px;
-            text-transform: uppercase;
-            text-align: center;
-            @include tablet {
-                font-size: 25px;
-            }
-        }
-
-        h4 {
-            margin: 20px 0 0;
-            font-size: 30px;
-            text-align: center;
-            @include tablet {
-                font-size: 45px;
-                text-align: left;
-            }
-        }
+    p {
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      @include tablet {
+        font-size: 25px;
+      }
     }
+
+    h4 {
+      margin: 20px 0 0;
+      font-size: 30px;
+      text-align: center;
+      @include tablet {
+        font-size: 45px;
+        text-align: left;
+      }
+    }
+  }
 }
 
 .plans {
-    .container {
-        text-align: center;
-        h1 {
-            margin: 0;
-        }
-        h2, h3, h4 {
-            text-align: center;
-            margin: 7px;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
-        h3 span {
-            color: $rojo;
-            font-size: 23px;
-        }
-        h4 {
-            font-size: 20px;
-        }
-    }    
-    
-    .boton-precios {
-        @include boton ($amarillo);
-        font-weight: bold;
-        padding: 10px 30px;
-        color: $negro;
-        display: inline-block;
-        width: unset;
-        a {
-            padding: 0;
-            margin: 0;
-        }
+  .container {
+    text-align: center;
+    h1 {
+      margin: 0;
     }
-    
+    h2,
+    h3,
+    h4 {
+      text-align: center;
+      margin: 7px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    h3 span {
+      color: $rojo;
+      font-size: 23px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }
+
+  .boton-precios {
+    @include boton($amarillo);
+    font-weight: bold;
+    padding: 10px 30px;
+    color: $negro;
+    display: inline-block;
+    width: unset;
+    a {
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
 
 .tabla {
-    display: flex;
-    margin: 80px 0 50px;
-    justify-content: center;
-    flex-direction: column;
-    @include tablet () {
-        flex-direction: row;
-        font-size: 12px;
+  display: flex;
+  margin: 80px 0 50px;
+  justify-content: center;
+  flex-direction: column;
+  @include tablet() {
+    flex-direction: row;
+    font-size: 12px;
+  }
+  @include desktop() {
+    font-size: 16px;
+  }
+  h5 {
+    border-radius: 5px 5px 0 0;
+  }
+  h5,
+  .contribute {
+    border-bottom: $border;
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include tablet() {
+      height: 300px;
     }
-    @include desktop () {
-        font-size: 16px;
+  }
+  li {
+    line-height: 1.5;
+    padding: 10px;
+    border-bottom: $border;
+  }
+  section {
+    flex: 0 0 20%;
+    border: $border;
+    border-bottom: medium none;
+    margin-bottom: 30px;
+    border-radius: 6px 6px 0 0;
+    @include tablet() {
+      margin-bottom: 30px;
+      &:last-child {
+        border-radius: 0 6px 0 0;
+        h5 {
+          border-radius: 0 5px 0 0;
+        }
+        order: 5;
+      }
     }
     h5 {
-        border-radius: 5px 5px 0 0;
+      background-color: $azul;
+      color: white;
     }
-    h5, .contribute {
-        border-bottom: $border;
-        margin: 0;
-        padding: 15px;
-        font-size: 20px;
+  }
+  .primary {
+    border-radius: 6px 6px 0 0;
+    @include tablet() {
+      order: 3;
+      margin-top: -30px;
+      ul {
+        height: 515px;
+      }
     }
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        @include tablet () {
-            height: 300px;
-        }
+    h5 {
+      border-radius: 5px 5px 0 0;
+      background-color: $rojo;
     }
-    li {
-        line-height: 1.5;
-        padding: 10px;
-        border-bottom: $border;
+  }
+  .secondary {
+    @include tablet() {
+      margin-top: -15px;
+      margin-right: -1px;
+      margin-left: -1px;
+      order: 2;
+      ul {
+        height: 500px;
+      }
+      &__second {
+        order: 4;
+      }
     }
-    section {
-        flex: 0 0 20%;
-        border: $border;
-        border-bottom: medium none;
-        margin-bottom: 30px;
-        border-radius: 6px 6px 0 0;
-        @include tablet () {
-            margin-bottom: 30px;
-            &:last-child {
-                border-radius: 0 6px 0 0;
-                h5 {
-                    border-radius: 0 5px 0 0;
-                }
-                order: 5;
-            }
-        }
-        h5 {
-            background-color: $azul;
-            color: white;
-        }
+    h5 {
+      background-color: $azul;
     }
-    .primary {
-        border-radius: 6px 6px 0 0;
-        @include tablet () {
-            order: 3;
-            margin-top: -30px;
-            ul {
-                height: 330px;
-            }
-        }
-        h5 {
-            border-radius: 5px 5px 0 0;
-            background-color: $rojo;
-        }
+  }
+  .ternary {
+    @include tablet() {
+      border-radius: 6px 0 0 0;
+      h5 {
+        border-radius: 5px 0 0 0;
+      }
+      ul {
+        height: 485px;
+      }
     }
-    .secondary {
-        @include tablet () {
-            margin-top: -15px;
-            margin-right: -1px;
-            margin-left: -1px;
-            order: 2;
-            ul {
-                height: 315px;
-            }
-            &__second {
-                order: 4;
-            }
-        }
-        h5 {
-            background-color: $azul;
-        }
-    }
-    .ternary {
-        @include tablet () {
-            border-radius: 6px 0 0 0;
-            h5 {
-                border-radius: 5px 0 0 0;
-            }
-        }
-    }
-    .contribute {
-        font-weight: 800;
-        font-size: 20px;
-        background-color: #F0F0F0;
-        border-top: $border;
-    }
+  }
+  .contribute {
+    font-weight: 800;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border-top: $border;
+  }
 }
 
 .why {
-    background-color: #F0F0F0;
-    h3 {
-        font-size: 40px;
-    }
+  background-color: #f0f0f0;
+  h3 {
+    font-size: 40px;
+  }
 }
 
 .how {
-    margin-top: 40px;
-    background-color: $azul;
-    position: relative;
-    color: white;
-    overflow: hidden;
-    text-align: center;
-    h3 {
-        font-size: 40px;
-    }
-    .logo {
-        position: absolute;
-        right: -50px;
-        top: 10%;
-        opacity: 0.3;
-    }
-    a {
-        color: $amarillo;
-    }
+  margin-top: 40px;
+  background-color: $azul;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  h3 {
+    font-size: 40px;
+  }
+  .logo {
+    position: absolute;
+    right: -50px;
+    top: 10%;
+    opacity: 0.3;
+  }
+  a {
+    color: $amarillo;
+  }
 }
 
 .communities {
+  position: relative;
+  .container {
+    padding: 0;
+  }
+  h3 {
+    font-size: 30px;
+    color: $azul;
+  }
+  .bogota,
+  .women,
+  .medellin {
+    display: flex;
+    flex-direction: column;
+    @include tablet() {
+      flex-direction: row;
+    }
+    div {
+      padding: 50px 40px;
+      order: 1;
+    }
+    .image {
+      min-height: 500px;
+      background: url(https://secure.meetupstatic.com/photos/event/5/c/c/9/highres_478883753.jpeg)
+        no-repeat center center transparent;
+      background-size: cover;
+      flex: 0 0 50%;
+      order: 2;
+    }
+    .logo {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      margin-left: -30px;
+      margin-bottom: -30px;
+      width: 60px;
+      height: 60px;
+      padding: 0;
+      background: url(../../../assets/logo-responsive.svg) no-repeat center
+        center white;
+      background-size: 85%;
+      border-radius: 50%;
+      z-index: 100;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      &-top {
+        top: 0;
+        bottom: unset;
+        margin-top: -30px;
+      }
+    }
+  }
+  .women {
+    justify-content: flex-end;
+    .image {
+      background-image: url(https://secure.meetupstatic.com/photos/event/d/6/3/4/highres_482394836.jpeg);
+    }
+  }
+  .medellin {
     position: relative;
-    .container {
-        padding: 0;
+    justify-content: flex-end;
+    @include tablet() {
+      flex-direction: row-reverse;
     }
-    h3 {
-        font-size: 30px;
-        color: $azul;
+    .image {
+      background-image: url(../../../assets/mega-workshop.jpeg);
     }
-    .bogota, .women, .medellin {
-        display: flex;
-        flex-direction: column;
-        @include tablet () {
-            flex-direction: row;
-        }
-        div {
-            padding: 50px 40px;
-            order: 1;
-        }
-        .image {
-            min-height: 500px;
-            background: url(https://secure.meetupstatic.com/photos/event/5/c/c/9/highres_478883753.jpeg) no-repeat center center transparent;
-            background-size: cover;
-            flex: 0 0 50%;
-            order: 2;
-        }
-        .logo {
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            margin-left: -30px;
-            margin-bottom: -30px;
-            width: 60px;
-            height: 60px;
-            padding: 0;
-            background: url(../../../assets/logo-responsive.svg) no-repeat center center white;
-            background-size: 85%;
-            border-radius: 50%;
-            z-index: 100;
-            box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-            &-top {
-                top: 0;
-                bottom: unset;
-                margin-top: -30px;
-            }
-        }
-    }
-    .women {
-        justify-content: flex-end;
-        .image {
-            background-image: url(https://secure.meetupstatic.com/photos/event/d/6/3/4/highres_482394836.jpeg);
-        }
-    }
-    .medellin {
-        position: relative;
-        justify-content: flex-end;
-        @include tablet () {
-            flex-direction: row-reverse;
-        }
-        .image {
-            background-image: url(../../../assets/mega-workshop.jpeg);
-        }
-    }
-    img {
-        display: inline-block;
-        width: 50%;;
-    }
+  }
+  img {
+    display: inline-block;
+    width: 50%;
+  }
 }
 
 .work {
-    background: url(../../../assets/mega-workshop.jpeg) no-repeat center center transparent;
-    background-image: linear-gradient(180deg, rgba(255,255,255,1) 13%, rgba(255,255,255,0) 59%, rgba(0,0,0,1) 100%), url(../../../assets/mega-workshop.jpeg);
-    background-size: cover;
-    .container {
-        max-width: 1000px;
-    }
+  background: url(../../../assets/mega-workshop.jpeg) no-repeat center center
+    transparent;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 13%,
+      rgba(255, 255, 255, 0) 59%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(../../../assets/mega-workshop.jpeg);
+  background-size: cover;
+  .container {
+    max-width: 1000px;
+  }
 }
