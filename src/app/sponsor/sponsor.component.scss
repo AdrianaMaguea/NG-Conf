@@ -35,19 +35,37 @@ h4 {
   font-size: 30px;
 }
 
-.sponsor-grid {
-  background-color: #444444;
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 30px 0 10px;
-  font-family: $titlefont;
-  text-transform: uppercase;
-  border-bottom: 13px solid #383838;
+.our_sponsors {
+  background-color: $negro;
+  padding: 60px 0;
+  h2 {
+    margin: 0 0 20px;
+    font-size: 50px;
+    color: $azul;
+    text-transform: uppercase;
+  }
 }
 
-.logo {
-  height: 75px;
-  width: auto;
-  margin: 8px;
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pack_sponsors {
+  h3 {
+    text-align: center;
+    color: $amarillo;
+    text-transform: uppercase;
+  }
+  img {
+    margin: 0 10px;
+    max-width: 150px;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $azul;
+    font-size: 20px;
+  }
 }

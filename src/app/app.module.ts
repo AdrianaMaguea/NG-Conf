@@ -26,6 +26,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ResponsiveLogoComponent } from './shared/responsive-logo/responsive-logo.component';
 import { SponsorshipComponent } from './pages/sponsorship/sponsorship.component';
+import { PartnersComponent } from './pages/partners/partners.component';
+import { CommunityComponent } from './community/community.component';
 
 
 @NgModule({
@@ -48,6 +50,8 @@ import { SponsorshipComponent } from './pages/sponsorship/sponsorship.component'
     CfpComponent,
     ResponsiveLogoComponent,
     SponsorshipComponent,
+    PartnersComponent,
+    CommunityComponent,
   ],
   imports: [
     BrowserModule,

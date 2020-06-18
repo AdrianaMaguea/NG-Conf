@@ -1,0 +1,78 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+.caption {
+    background: url(../../../assets/blue.jpg) no-repeat scroll center center;
+    background-size: cover;
+    height: 60vh;
+    h1 {
+        padding-top: 150px;
+        margin: 0;
+        font-size: 40px;
+        color: $blanco;
+        @include tablet {
+            font-size: 80px;
+        }
+    }
+    p { 
+        text-align: center;
+        font-size: 30px;
+        color: $amarillo;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include tablet {
+            font-size: 40px;
+        }
+    }
+}
+
+.community {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    a {
+        text-align: center;
+        flex: 1 0 25%;
+        img {
+            max-width: 150px;
+        }
+        h4 {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $azul;
+        }
+        &:hover h4 {
+            color: $rojo;
+        }
+    }
+    
+} 
+
+.partners {
+    background-color: $azul;
+    h2 { 
+        font-size: 40px;
+        color: $blanco;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 30px;
+        color: $blanco;
+    }
+    li {
+        font-size: 20px;
+        color: $blanco;
+        padding: 4px 0;
+    }
+    span {
+        color: $amarillo;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        a {
+            color: $rojo;
+        }
+    }
+
+}

@@ -1,4 +1,4 @@
-<div class="split-section">
+<div class="split-section" *ngIf = "!sponsorbar">
   <div class="info">
     <h3 i18n="@@Sponsors.Title">Why are we Holding this conference?</h3>
 
@@ -29,34 +29,29 @@
     <img src="../../assets/conference-.jpg" alt="" />
   </div>
 </div>
-<div class="sponsor-grid">
-  <h2 i18n="@@Sponsors.Title">Special thanks to our sponsors</h2>
-  <h4 i18n="@@Gold.Title">Platinum</h4>
-  <a routerLink="sponsorship">
-    ¡Get on board!
-  </a>
-  <h4 i18n="@@Gold.Title">Gold</h4>
-  <a href="https://vaki.co" target="_blank">
-    <img class="logo" src="../../assets/logos/torre.png"
-  /></a>
-  <h4 i18n="@@Gold.Title">Silver</h4>
-  <a routerLink="sponsorship">
-    ¡Get on board!
-  </a>
-  <h4 i18n="@@Gold.Title">Bronze</h4>
-  <a href="https://thinkster.io" target="_blank">
-    <img class="logo" src="../../assets/logos/thinkster.png"
-  /></a>
-  <a href="https://vaki.co" target="_blank">
-    <img class="logo" src="../../assets/logos/vaki.png"
-  /></a>
-  <h4 i18n="@@Gold.Title">Enterprise</h4>
-  <a href="https://pappcorn.com" target="_blank">
-    <img class="logo" src="../../assets/logos/pappcorn.png"
-  /></a>
-  <div>
-    <a routerLink="sponsorship">
-      ¡Get on board!
-    </a>
+<div class="our_sponsors">
+<h2><a href="ngconf.co/sponsorship">Our Sponsors</a></h2>
+<div class="sponsors">
+  <div class="pack_sponsors">
+    <h3>Platinum</h3>
+    <a href="ngconf.co/sponsorship">¡Get on Board!</a> 
   </div>
+  <div class="pack_sponsors">
+    <h3>Gold</h3>
+    <img src="../../assets/torre.png" alt="" />
+  </div>
+  <div class="pack_sponsors">
+    <h3>Silver</h3>
+    <a href="ngconf.co/sponsorship">¡Get on Board!</a> 
+  </div>
+  <div class="pack_sponsors">
+    <h3>Bronze</h3>
+    <img src="../../assets/thinkster.png" alt="">
+    <img src="../../assets/vaki.png" alt="">
+  </div>
+  <div class="pack_sponsors">
+    <h3>Enterprise</h3>
+    <img src="../../assets/pappcorn.png" alt="">
+  </div>
+</div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sponsor',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sponsor.component.scss']
 })
 export class SponsorComponent implements OnInit {
-
+  @Input() sponsorbar = false;
   constructor() { }
 
   ngOnInit() {
