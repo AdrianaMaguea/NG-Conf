@@ -67,3 +67,19 @@ h2 {
         font-size: 15px;
     }
 }
+
+.boton-precios {
+    @include boton ($amarillo);
+    font-weight: bold;
+    width: auto;
+    margin: 30px auto 5px;
+    padding: 10px 0;
+    color: $negro;
+    width: 20%;
+
+    a {
+        padding: 0;
+        margin: 0;
+
+    }
+}

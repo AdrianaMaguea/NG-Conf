@@ -1,0 +1,132 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+:host {
+    background-color: #f2f2f2;
+    display: block;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    @include tablet {
+        width: 70%;
+    }
+}
+
+h3 {
+    text-align: center;
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px 0 30px;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.tabs {
+    margin: auto;
+    display: flex;
+    @include tablet {
+        width: 70%;
+    }
+    div {
+        flex: 1 1 50%;
+        font-size: 23px;
+        text-align: left;
+        background-color: $rojo;
+        opacity: 0.5;
+        color: $blanco;
+        padding: 10px 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        .desktop {
+            display: none;
+            @include tablet {
+                display: block;
+            }
+        }
+        .mobile {
+            display: block;
+            @include tablet {
+                display: none;
+            }
+        }
+        p {
+            margin: 0;
+            font-size: 18px;
+            @include tablet {
+                font-size: 23px;
+            }
+        }
+        svg {
+            width: 30px;
+            margin-right: 15px;
+        }
+        &.selected {
+            opacity: 1;
+        }
+    }
+}
+
+caption {
+    font-size: 25px;
+    text-align: left;
+    background-color: $rojo;
+    color: $blanco;
+    padding: 10px 18px;
+}
+
+td {
+    padding: 10px;
+    color: $negro;
+    display: block;
+    @include tablet {
+        padding: 10px 0 10px 50px;
+        display: table-cell;
+    }
+    h2 {
+        font-size: 20px;
+        margin: 2px 0;
+        color: $rojo;
+        text-transform: uppercase;
+    }
+    span {
+        color: #999;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+
+.light {
+    text-align: center;
+}
+
+tr {
+    border-bottom: $gris 2.5px solid;
+    svg {
+        font-size: 30px;
+        color: $azul;
+        margin: 8px;
+        text-align: center;
+    }
+}
+
+.break, .lunch, .intro, .panel {
+    background-color: rgba( $azul, $alpha: 0.1);
+    span {
+        font-size: 20px;
+        font-weight: bold;
+        color: $azul;
+        text-transform: uppercase;
+    }
+}
+

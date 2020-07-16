@@ -1,0 +1,231 @@
+<div class="container">
+    <h3>AGENDA</h3>
+    <h4>Hours in GMT-5</h4>
+    <div class="tabs">
+        <div (click)="toggleTab(1)" [ngClass]="{'selected': tab==1}">
+            <i class="fa fa-calendar desktop" aria-hidden="true"></i>
+            <p class="desktop">Friday, August 14th</p>
+            <p class="mobile">Fri 14</p>
+        </div>
+        <div (click)="toggleTab(2)" [ngClass]="{'selected': tab==2}">
+            <i class="fa fa-calendar desktop" aria-hidden="true"></i>
+            <p class="desktop">Saturday, August 15th</p>
+            <p class="mobile">Sat 15</p>
+        </div>
+    </div>
+    <table *ngIf="tab===1">
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <h5>Workshops day</h5>
+                </td>
+            </tr>
+            <tr class="intro">
+                <td>8:00AM - 8:30AM</td>
+                <td><i class="fas fa-flag-checkered"></i></td>
+                <td><span>Intro</span></td>
+            </tr>
+            <tr class="natalia">
+                <td>8:30AM - 12:30PM</td>
+                <td><i class="fas fa-sun"></i>
+                </td>
+                <td>
+                    <h2>Performant Angular Applications</h2>
+                    <span>Tamas Piros</span>
+                </td>
+            </tr>
+            <tr class="tamas">
+                <td>8:30AM - 12:30PM</td>
+                <td><i class="fas fa-sun"></i>
+                </td>
+                <td>
+                    <h2>Learn Schematics from 0 to publishing a library</h2>
+                    <span>Natalia Venditto</span>
+                </td>
+            </tr>
+            <tr class="intro">
+                <td>1:00AM - 1:30PM</td>
+                <td><i class="fas fa-flag-checkered"></i></td>
+                <td ><span>Intro</span></td>
+            </tr>
+            <tr class="Aaron">
+                <td>1:30PM - 4:30PM</td>
+                <td><i class="fas fa-moon"></i></td>
+                <td>
+                    <h2>Mastering Angular Forms: Template-Driven vs Reactive Forms</h2>
+                    <span>Luis Aviles</span>
+                </td>
+            </tr>
+            <tr class="luis">
+                <td>1:30PM - 4:30PM</td>
+                <td><i class="fas fa-moon"></i></td>
+                <td>
+                    <h2>Angular + Scully: How to build Jamstack apps</h2>
+                    <span>Aaron Frost</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        
+
+    <table *ngIf="tab===2">
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <h5>Conference day</h5>
+                </td>
+            </tr>
+            <tr class="intro">
+                <td>8:30AM - 9:00AM</td>
+                <td><i class="fas fa-flag-checkered"></i></td>
+                <td ><span>Intro</span></td>
+            </tr>
+            <tr class="martina">
+                <td>9:00AM - 9:30AM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Component Features - The Post Ivy Release-Time</h2>
+                    <span>Martina Kraus</span>
+                </td>
+            </tr>
+            <tr class="Estefa-Carlos">
+                <td>9:30AM - 10:00AM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Scalable Architecture for Angular apps</h2>
+                    <span>Estefania González and Carlos Caballero </span>
+                </td>
+            </tr>
+            <tr class="Azizi">
+                <td>10:00AM - 10:15AM</td>
+                <td class="light"><i class="far fa-lightbulb"></i></td>
+                <td>
+                    <h2>AVP, Design System</h2>
+                    <span>Azizi Yazit</span>
+                </td>
+            </tr>
+            <tr class="jan">
+                <td>10:15AM - 10:45AM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Demystifying RxJS Operators</h2>
+                    <span>Jan-Niklas Wortmann</span>
+                </td>
+            </tr>
+            <tr class="break">
+                <td>10:45AM - 11:00AM</td>
+                <td><i class="fa fa-coffee" aria-hidden="true"></i>
+                </td>
+                <td><span>Break</span></td>
+            </tr>
+            <tr class="Jorge">
+                <td>11:00AM - 11:30AM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Testeando ando</h2>
+                    <span>Jorge Cano</span>
+                </td>
+            </tr>
+            <tr class="Robert">
+                <td>11:30AM - 11:45AM</td>
+                <td class="light"><i class="far fa-lightbulb"></i></td>
+                <td>
+                    <h2>~920 Bytes - Creating the smallest Angular Bundle in the world</h2>
+                    <span>Robert Willemelis</span>
+                </td>
+            </tr>
+            <tr class="Pato">
+                <td>11:45AM - 12:15M</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Usando Librerias en un Angular Nx monorepo</h2>
+                    <span>Patricio Vargas</span>
+                </td>
+            </tr>
+            <tr class="lunch">
+                <td>12:15M - 1:15PM</td>
+                <td><i class="fas fa-hamburger"></i>
+                </td>
+                <td><span>Lunch</span></td>
+            </tr>
+            <tr class="Pablo">
+                <td>1:15PM - 1:30PM</td>
+                <td class="light"><i class="far fa-lightbulb"></i></td>
+                <td>
+                    <h2>Integrando WebComponents con ngModel y Reactive Forms</h2>
+                    <span>Pablo Ortuño</span>
+                </td>
+            </tr>
+            <tr class="Dani">
+                <td>1:30PM - 2:00PM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Forms everyone can use</h2>
+                    <span>Daniel Marin</span>
+                </td>
+            </tr>
+            <tr class="Keilla">
+                <td>2:00PM - 2:30PM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Give your Apps Superpowers</h2>
+                    <span>Keilla Menezes</span>
+                </td>
+            </tr>
+            <tr class="Lupe">
+                <td>2:30PM - 2:45PM</td>
+                <td class="light"><i class="far fa-lightbulb"></i></td>
+                <td>
+                    <h2>Become a Job Oriented Learner</h2>
+                    <span>Lupe Canaviri</span>
+                </td>
+            </tr>
+            <tr class="break">
+                <td>2:45PM - 3:00PM</td>
+                <td><i class="fas fa-cookie-bite"></i>
+                </td>
+                <td><span>Break</span></td>
+            </tr>
+            <tr class="Aaron">
+                <td>3:00PM - 3:30PM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Angular + Scully: Ultimate Speed</h2>
+                    <span>Aaron Frost</span>
+                </td>
+            </tr>
+            <tr class="Alfonso">
+                <td>3:30PM - 4:00PM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>Aprende NgRx como un profesional!</h2>
+                    <span>Alfonso Lopez</span>
+                </td>
+            </tr>
+            <tr class="Minko">
+                <td>4:00PM - 4:30PM</td>
+                <td><i class="fa fa-bullhorn" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <h2>The State of Angular</h2>
+                    <span>Minko Gechev</span>
+                </td>
+            </tr>
+            <tr class="panel">
+                <td>4:30M - 5:00PM</td>
+                <td><i class="fas fa-question"></i></td>
+                <td><span>Panel</span></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+    <h1> <span>Ou</span>r Speakers</h1>
+    <p>We have selected a group of speakers that will bring you the best and most content content on Angular and web development technologies.</p>
+    <div class="speakers">
+        <div (click)="addModal(speaker)" class="info_speaker" *ngFor="let speaker of speakers">
+            <div class="contenedor">
+                <img src="../../../assets/{{speaker.picture}}.jpg" alt="">
+            </div>
+            <div>
+            <h2>{{speaker.name}}</h2>
+            <span>{{speaker.jobTitle}}</span>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" *ngIf="currentSpeaker">
+    <div class="modal-window">
+        <button (click)="removeModal()"><i class="fas fa-times"></i></button>
+        <div class="contenedor_info">
+            <img src="../../../assets/{{currentSpeaker.picture}}.jpg" alt="">
+            <div class="info">
+                <h2>{{currentSpeaker.name}}</h2>
+                <h4>{{currentSpeaker.country}}</h4>
+                <h4>{{currentSpeaker.jobTitle}}</h4>
+                <h3>{{currentSpeaker.talkTitle}}</h3>
+                <p [innerHTML]= "currentSpeaker.description"></p>
+            </div>
+        </div>
+    </div>
+</div>

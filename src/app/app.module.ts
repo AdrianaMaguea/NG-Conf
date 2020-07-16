@@ -28,6 +28,8 @@ import { ResponsiveLogoComponent } from './shared/responsive-logo/responsive-log
 import { SponsorshipComponent } from './pages/sponsorship/sponsorship.component';
 import { PartnersComponent } from './pages/partners/partners.component';
 import { CommunityComponent } from './community/community.component';
+import { SpeakersComponent } from './pages/speakers/speakers.component';
+import { AgendaComponent } from './agenda/agenda.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { CommunityComponent } from './community/community.component';
     SponsorshipComponent,
     PartnersComponent,
     CommunityComponent,
+    SpeakersComponent,
+    AgendaComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,25 +9,3 @@
 .info {
   padding: 110px 0;
 }
-
-.covid {
-  background: url(../../assets/nuestroplan.png) no-repeat center;
-  background-size: cover;
-  height: 30vh;
-
-  h2 {
-    text-align: right;
-    color: $blanco;
-    font-size: 30px;
-    padding: 70px;
-    @include tablet {
-      font-size: 50px;
-    }
-    a {
-      color: $amarillo;
-      span {
-        color: white;
-      }
-    }
-  }
-}
