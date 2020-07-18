@@ -26,7 +26,7 @@ h3 {
 h2 {
   text-align: center;
   color: $amarillo;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 h4 {
@@ -39,27 +39,32 @@ h4 {
   background-color: $negro;
   padding: 60px 0;
   h2 {
-    margin: 0 0 20px;
-    font-size: 50px;
+    margin: 0 0 50px;
+    font-size: 40px;
     color: $azul;
     text-transform: uppercase;
+    @include tablet {
+      font-size: 45px;
+    }
   }
 }
 
 .sponsors {
-  display: flex;
   justify-content: space-around;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .pack_sponsors {
-  h3 {
-    text-align: center;
-    color: $amarillo;
-    text-transform: uppercase;
+  margin-bottom: 70px;
+  @include tablet {
+    margin-bottom: 0;
   }
   img {
-    margin: 0 10px;
+    margin: 0 auto 20px;
     max-width: 150px;
+    display: block;
   }
   a {
     text-decoration: none;
@@ -68,4 +73,35 @@ h4 {
     color: $azul;
     font-size: 20px;
   }
+  h3 {
+    text-align: center;
+    color: $amarillo;
+    text-transform: uppercase;
+    font-size: 26px;
+  }
+  &.main h3 {
+    font-size: 32px;
+  }
+  &.secondary h3 {
+    font-size: 29px;
+  }
+}
+
+.become-sponsor {
+  background-color: #fee600;
+  color: #ffff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  padding: 5px 0px;
+  font-weight: bold;
+  padding: 10px 30px;
+  color: #262626;
+  text-transform: uppercase;
+  display: block;
+  max-width: 340px;
+  margin: auto;
 }

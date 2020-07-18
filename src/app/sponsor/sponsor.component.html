@@ -1,4 +1,4 @@
-<div class="split-section" *ngIf = "!sponsorbar">
+<!-- <div class="split-section" *ngIf = "!sponsorbar">
   <div class="info">
     <h3 i18n="@@Sponsors.Title">Why are we Holding this conference?</h3>
 
@@ -28,30 +28,33 @@
   <div class="img">
     <img src="../../assets/conference-.jpg" alt="" />
   </div>
-</div>
+</div> -->
 <div class="our_sponsors">
-<h2><a href="/sponsorship">Our Sponsors</a></h2>
-<div class="sponsors">
-  <div class="pack_sponsors">
-    <h3>Platinum</h3>
-    <a href="ngconf.co/sponsorship">¡Get on Board!</a> 
+  <h2><a href="/sponsorship">Our Sponsors</a></h2>
+  <div class="sponsors">
+    <div class="pack_sponsors">
+      <h3>Bronze</h3>
+      <img src="../../assets/thinkster.png" alt="">
+      <img src="../../assets/vaki.png" alt="">
+    </div>
+    <div class="pack_sponsors secondary">
+      <h3>Silver</h3>
+      <img src="../../assets/laboratoria.png" alt="">
+    </div>
+    <div class="pack_sponsors main">
+      <h3>Platinum</h3>
+      <img src="../../assets/nrwl.svg" alt="" />
+    </div>
+    <div class="pack_sponsors secondary">
+      <h3>Gold</h3>
+      <img src="../../assets/torre.png" alt="" />
+    </div>
+    <div class="pack_sponsors">
+      <h3>Enterprise</h3>
+      <img src="../../assets/pappcorn.png" alt="">
+    </div>
   </div>
-  <div class="pack_sponsors">
-    <h3>Gold</h3>
-    <img src="../../assets/torre.png" alt="" />
+  <div *ngIf="sponsorshpButton">
+    <a href="/sponsorship" class="become-sponsor">Why to become a sponsor?</a>
   </div>
-  <div class="pack_sponsors">
-    <h3>Silver</h3>
-    <a href="ngconf.co/sponsorship">¡Get on Board!</a> 
-  </div>
-  <div class="pack_sponsors">
-    <h3>Bronze</h3>
-    <img src="../../assets/thinkster.png" alt="">
-    <img src="../../assets/vaki.png" alt="">
-  </div>
-  <div class="pack_sponsors">
-    <h3>Enterprise</h3>
-    <img src="../../assets/pappcorn.png" alt="">
-  </div>
-</div>
 </div>
