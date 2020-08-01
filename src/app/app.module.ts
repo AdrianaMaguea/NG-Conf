@@ -30,6 +30,7 @@ import { PartnersComponent } from './pages/partners/partners.component';
 import { CommunityComponent } from './community/community.component';
 import { SpeakersComponent } from './pages/speakers/speakers.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import { DetailComponent } from './pages/detail/detail.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { AgendaComponent } from './agenda/agenda.component';
     CommunityComponent,
     SpeakersComponent,
     AgendaComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,

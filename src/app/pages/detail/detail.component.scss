@@ -1,0 +1,103 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+:host {
+    display: block;
+    background-color: #0b1822;
+    color: white;
+}
+
+h1 {
+    text-align: left;
+    text-transform: none;
+    margin-bottom: 10px;
+    color: $rojo;
+}
+
+h2 {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    font-style: italic;
+}
+
+p.bio {
+    font-weight: 200;
+    color: #666;
+    font-size: 1.1;
+}
+
+.speaker-info {
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .img {
+        overflow: hidden;
+        order: -1;
+        img {
+            display: block;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    @include tablet {
+        flex-direction: row;
+        .img {
+            flex: 0 0 50%;
+            order: 0;
+            img {
+                display: block;
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
+
+.description {
+    padding: 20px;
+    @include tablet {
+        padding: 40px 20px 40px 50px;
+    }
+}
+
+.intervention {
+    font-weight: 200;
+    padding: 50px 20px 20px;
+    .talk:last-child {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+    }
+    @include tablet {
+        display: flex;
+        .content {
+            padding: 30px 0 30px 60px;
+        }
+    }
+    h2 {
+        font-weight: 500;
+        font-size: 30px;
+        font-style: italic;
+        color: $azul;
+        @include tablet {
+            font-size: 50px;
+        }
+    }
+    img {
+        display: none;
+        @include tablet {
+            display: block;
+        }
+        max-width: 300px;
+        margin: 0 auto 60px;
+    }
+}

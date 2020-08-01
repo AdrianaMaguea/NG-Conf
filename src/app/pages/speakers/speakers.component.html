@@ -8,7 +8,7 @@
 
 <div class="container">
     <div class="speakers">
-        <div (click)="addModal(speaker)" class="info_speaker" *ngFor="let speaker of speakers">
+        <div [routerLink]="['/speaker', speaker.id]" class="info_speaker" *ngFor="let speaker of speakers">
             <div class="contenedor">
                 <img src="../../../assets/{{speaker.picture}}.jpg" alt="">
             </div>
@@ -29,8 +29,10 @@
                 <h2>{{currentSpeaker.name}}</h2>
                 <h4>{{currentSpeaker.country}}</h4>
                 <h4>{{currentSpeaker.jobTitle}}</h4>
-                <h3>{{currentSpeaker.talkTitle}}</h3>
-                <p [innerHTML]= "currentSpeaker.description"></p>
+                <div *ngFor="let intervention of currentSpeaker.interventions">
+                    <h3>{{intervention.title}}</h3>
+                    <p [innerHTML]= "intervention.description"></p>
+                </div>
             </div>
         </div>
     </div>

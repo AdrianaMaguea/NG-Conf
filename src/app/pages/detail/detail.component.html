@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="speaker-info">
+        <div class="description">
+            <h1>{{speaker.name}}</h1>
+            <h2>{{speaker.jobTitle}}</h2>
+            <p class="bio">{{speaker.bio}}</p>
+            <p *ngIf="speaker.company"><strong>Company: </strong>{{speaker.company}}</p>
+            <div class="extra-info">
+                <p><strong>Country: </strong>{{speaker.country}}</p>
+                <p><strong>City: </strong>{{speaker.city}}</p>
+                <p><strong>Job title: </strong>{{speaker.jobTitle}}</p>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../../../../../assets/{{speaker.picture}}.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="intervention">
+        <div class="img">
+            <img src="../../../../../assets/logo-01.png" alt="">
+        </div>
+        <div class="content">
+            <div class="talk" *ngFor="let intervention of speaker.interventions">
+                <h4>{{intervention.type}}, ({{intervention.duration}})</h4>
+                <h2>{{intervention.title}}</h2>
+                <h3>Description</h3>
+                <p [innerHTML]="intervention.description"></p>
+                <p><strong>Original Language:</strong> {{intervention.language}}</p>
+                <p><strong>Translation to:</strong> {{intervention.translation}}</p>
+            </div>
+        </div>
+    </div>
+</div>
